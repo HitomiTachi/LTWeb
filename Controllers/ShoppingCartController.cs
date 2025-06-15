@@ -88,6 +88,7 @@ namespace NguyenNhan_2179_tuan3.Controllers
 
         // ✅ Xử lý thanh toán
         [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Checkout(Order order)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
@@ -102,6 +103,9 @@ namespace NguyenNhan_2179_tuan3.Controllers
             order.OrderDate = DateTime.UtcNow;
             order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
 
+            // Thêm dòng này để set trạng thái mặc định
+            order.Status = "Chờ xác nhận";
+
             order.OrderDetails = cart.Items.Select(i => new OrderDetail
             {
                 ProductId = i.ProductId,
@@ -115,7 +119,6 @@ namespace NguyenNhan_2179_tuan3.Controllers
 
             return View("OrderCompleted", order.Id);
         }
-
         // ✅ Đếm số lượng sản phẩm trong giỏ
         [HttpGet]
         public IActionResult GetCartCount()

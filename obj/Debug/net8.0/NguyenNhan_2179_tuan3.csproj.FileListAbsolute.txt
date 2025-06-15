@@ -280,7 +280,6 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticweba
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNh.1BB2B816.Up2Date
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\refint\NguyenNhan_2179_tuan3.dll
@@ -290,3 +289,10 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\ref\Nguyen
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.sourcelink.json
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\MailKit.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

@@ -1,5 +1,5 @@
-﻿
-@model IEnumerable<NguyenNhan_2179_tuan3.Models.Product>
+﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Product>
+
 
 @{
     ViewData["Title"] = "Danh Sách Sản Phẩm";
@@ -43,7 +43,7 @@
                         {
                             <tr>
                                 <td>@item.Name</td>
-                                <td>@Html.Raw(item.Description)</td> <!-- ✅ Cho phép hiển thị HTML từ CKEditor -->
+                                <td>@Html.Raw(item.Description)</td>
                                 <td>@item.Price.ToString("#,##0") VND</td>
                                 <td class="text-center">
                                     <img src="@item.ImageUrl" width="100" height="100"
@@ -51,17 +51,16 @@
                                          style="object-fit: cover;" />
                                 </td>
                                 <td class="text-center">
-                                    <a asp-controller="ShoppingCart" asp-action="AddToCart"
-                                       asp-route-productId="@item.Id"
-                                       asp-route-quantity="1"
-                                       class="btn btn-sm btn-success mb-1 rounded-pill">
-                                        <i class="bi bi-cart-plus-fill"></i> Mua hàng
-                                    </a>
+                                    <!-- Nút Mua ngay cho admin -->
+                                    <button class="btn btn-sm btn-success mb-1 rounded-pill"
+                                            onclick="addToCart(@item.Id, 1)">
+                                        <i class="bi bi-cart-plus-fill"></i> Mua ngay
+                                    </button>
                                     <a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id"
                                        class="btn btn-sm btn-outline-primary rounded-pill">
                                         <i class="bi bi-eye-fill"></i> Xem
                                     </a>
-                                        <a class="btn btn-outline-warning flex-fill btn-sm"
+                                    <a class="btn btn-outline-warning flex-fill btn-sm"
                                        asp-action="Update" asp-route-id="@item.Id">
                                         <i class="bi bi-pencil me-1"></i>Sửa
                                     </a>
@@ -80,8 +79,60 @@
     </div>
 </section>
 
-<!-- Script khởi tạo DataTable -->
 @section Scripts {
+    <!-- jQuery (luôn phải đứng trước DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <style>
+        .toast-notification {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s, top 0.3s;
+            min-width: 260px;
+        }
+
+            .toast-notification.show {
+                opacity: 1;
+                top: 48px;
+            }
+
+            .toast-notification.success .toast-content {
+                background: #198754;
+                color: #fff;
+            }
+
+            .toast-notification.error .toast-content {
+                background: #dc3545;
+                color: #fff;
+            }
+
+        .toast-content {
+            padding: 16px 24px 16px 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .toast-message {
+            flex: 1;
+        }
+
+        .toast-close {
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+    </style>
     <script>
         $(document).ready(function () {
             $('#productTable').DataTable({
@@ -102,6 +153,67 @@
                     infoEmpty: "Chưa có dữ liệu",
                 }
             });
+
+            // Cập nhật lần đầu khi trang tải
+            updateCartCount();
         });
+
+        function addToCart(productId, quantity = 1) {
+            fetch("/ShoppingCart/AddToCart", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: `productId=${productId}&quantity=${quantity}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success !== false) {
+                    showToast(data.message || "Đã thêm vào giỏ hàng!", 'success');
+                    updateCartCount();
+                } else {
+                    showToast(data.message || "Có lỗi khi thêm vào giỏ hàng!", 'error');
+                }
+            })
+            .catch(err => {
+                showToast("Có lỗi xảy ra khi thêm vào giỏ hàng!", 'error');
+            });
+        }
+
+        function updateCartCount() {
+            fetch('/ShoppingCart/GetCartCount')
+                .then(res => res.json())
+                .then(data => {
+                    const count = data.count || 0;
+                    const badge = document.getElementById("cartCount");
+                    if (badge) {
+                        badge.textContent = count;
+                        badge.style.display = count > 0 ? 'inline-block' : 'none';
+                        badge.classList.remove('cart-animate');
+                        void badge.offsetWidth;
+                        if (count > 0) badge.classList.add('cart-animate');
+                    }
+                });
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.createElement("div");
+            toast.className = `toast-notification ${type}`;
+            toast.innerHTML = `
+                <div class="toast-content">
+                    <div class="toast-message">${message}</div>
+                    <button class="toast-close">&times;</button>
+                </div>`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+            toast.querySelector('.toast-close').addEventListener('click', () => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            });
+        }
     </script>
 }

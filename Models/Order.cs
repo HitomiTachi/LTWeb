@@ -11,10 +11,11 @@ namespace NguyenNhan_2179_tuan3.Models
         public decimal TotalPrice { get; set; }
         public string ShippingAddress { get; set; }
         public string Notes { get; set; }
+        public string Status { get; set; } // Trạng thái: "Chờ xác nhận", "Đã xác nhận", "Đã giao", "Đã hủy",...
+
         [ForeignKey("UserId")]
         [ValidateNever]
         public ApplicationUser ApplicationUser { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
     }
-
 }

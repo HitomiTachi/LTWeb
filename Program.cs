@@ -1,14 +1,19 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Repositories;
 
-var builder = WebApplication.CreateBuilder(args);
+// Đảm bảo bạn đã có using cho ServicesEmailSender
+// using NguyenNhan_2179_tuan3.Services; // Nếu bạn để class trong folder Services
 
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Đăng ký đúng class gửi mail -- chỉ đăng ký 1 lần!
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddTransient<IEmailSender, ServicesEmailSender>();
 
 // 1.2 Cấu hình Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -23,9 +28,6 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LogoutPath = "/Identity/Account/Logout";
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
-
-// 1.4 Cấu hình gửi email (giả lập)
-builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 // 1.5 Razor Pages và MVC
 builder.Services.AddRazorPages();
@@ -63,7 +65,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 
 app.UseSession();
 

@@ -1,0 +1,43 @@
+﻿@model NguyenNhan_2179_tuan3.Models.Product
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+ViewData["Title"] = "Edit Product";
+}
+<h2>Edit Product</h2>
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+<textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-
+danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" asp-items="@ViewBag.Categories"
+                class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>Hình ảnh</label>
+        <input type="file" name="imageFile" class="form-control" />
+        @if (!string.IsNullOrEmpty(Model?.ImageUrl))
+        {
+            <div>
+                <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" style="max-width:150px;max-height:150px;" />
+            </div>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+ 
+        <a class="nav-link text-dark fw-semibold" asp-area="" asp-controller="Product" asp-action="IndexList">Danh sách sản phẩm</a>
+</form>
+<input type="hidden" asp-for="Id" />

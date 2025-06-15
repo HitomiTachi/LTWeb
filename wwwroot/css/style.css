@@ -1,0 +1,288 @@
+﻿:root {
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --success: #10b981;
+    --danger: #ef4444;
+    --gray: #6b7280;
+    --gray-light: #f3f4f6;
+    --white: #fff;
+    --dark: #181d29;
+    --shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+    --transition: all 0.25s ease;
+    --text-xs: 0.75rem;
+    --text-base: 1rem;
+}
+
+/* ===== Announcement Bar ===== */
+.announcement__bar {
+    height: 40px;
+    background: linear-gradient(to right, #c44569, #e66767);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1050;
+}
+
+.marquee {
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+    }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ===== Base ===== */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--gray-light);
+    color: var(--dark);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .row.g-4 {
+        gap: 2rem;
+    }
+
+/* ===== Carousel ===== */
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px;
+        transition: transform 0.6s ease-in-out;
+    }
+
+/* ===== Product Listing ===== */
+.product-listing {
+    background: #f8fafc;
+    padding: 2rem 0;
+}
+
+/* ===== Product Card ===== */
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    transition: var(--transition);
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+/* ===== Product Image ===== */
+.product-media {
+    position: relative;
+    height: 220px;
+    background: var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1rem;
+    transition: var(--transition);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+    filter: brightness(1.08) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+/* ===== Category Badge ===== */
+.category-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(59, 130, 246, 0.12);
+    opacity: 0.95;
+}
+
+/* ===== Product Actions ===== */
+.product-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.product-card:hover .product-actions {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.product-actions .btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+/* ===== Product Info ===== */
+.card-body {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--dark);
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* ===== Price and Buy Button ===== */
+.card-body .btn {
+    transition: var(--transition);
+}
+
+    .card-body .btn:hover {
+        transform: translateY(-1px);
+        opacity: 0.9;
+    }
+
+.text-success {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* ===== Toast ===== */
+.toast-notification {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+    .toast-notification.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .toast-notification.success {
+        border-left-color: var(--success);
+    }
+
+    .toast-notification.error {
+        border-left-color: var(--danger);
+    }
+
+.toast-close {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.5rem;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+    .product-media,
+    .product-image {
+        height: 180px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-media,
+    .product-image {
+        height: 140px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-media,
+    .product-image {
+        height: 100px;
+    }
+
+    .card-body {
+        padding: 0.75rem;
+    }
+
+    .carousel-item img {
+        height: 220px;
+    }
+}

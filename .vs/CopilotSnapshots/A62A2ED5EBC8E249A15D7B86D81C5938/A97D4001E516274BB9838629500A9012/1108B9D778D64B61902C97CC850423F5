@@ -1,0 +1,52 @@
+﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+    <table class="table table-bordered table-hover shadow-sm align-middle">
+        <thead class="table-primary text-center">
+            <tr>
+                <th>Ảnh</th>  <!-- Thêm cột ảnh -->
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Mô tả</th>
+                <th>Danh mục</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td class="text-center" style="width:100px;">
+                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                        {
+                            <img src="@Url.Content(product.ImageUrl)" alt="@product.Name" style="max-width: 80px; max-height: 80px; object-fit: contain; border-radius: 5px;" />
+                        }
+                        else
+                        {
+                            <span>Không có ảnh</span>
+                        }
+                    </td>
+                    <td>@product.Name</td>
+                    <td>@product.Price.ToString("N0") VNĐ</td>
+                    <td>@product.Description</td>
+                    <td>@product.Category?.Name</td>
+                    <td class="text-nowrap">
+                        <a class="btn btn-sm btn-info text-white" asp-action="Display" asp-route-id="@product.Id">Xem</a>
+                        <a class="btn btn-sm btn-warning text-white" asp-action="Update" asp-route-id="@product.Id">Sửa</a>
+                        <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@product.Id">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-end">
+        <a class="btn btn-success" asp-area="" asp-controller="Product" asp-action="Add">Thêm sản phẩm</a>
+    </div>
+</div>

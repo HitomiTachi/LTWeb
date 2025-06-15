@@ -1,0 +1,41 @@
+﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Product>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+}
+
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">Sản Phẩm Nổi Bật</h1>
+            <p class="lead text-muted">Khám phá các sản phẩm chất lượng hàng đầu dành cho bạn</p>
+        </div>
+
+        <!-- Carousel hình ảnh -->
+        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="~/images/2.jpg" class="d-block w-100" alt="Bánh kem ngon">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/3.jpg" class="d-block w-100" alt="Bánh cupcake đẹp">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/4.jpg" class="d-block w-100" alt="Bánh ngọt hấp dẫn">
+                </div>
+            </div>
+
+            <!-- Điều hướng -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>

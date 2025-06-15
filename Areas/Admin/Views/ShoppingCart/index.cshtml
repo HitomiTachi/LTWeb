@@ -1,0 +1,103 @@
+﻿@model ShoppingCart
+@{
+    ViewData["Title"] = "🛒 Giỏ hàng của bạn";
+}
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">🛒 Giỏ hàng của bạn</h2>
+
+    @if (!Model.Items.Any())
+    {
+        <div class="alert alert-info text-center">
+            Giỏ hàng của bạn đang trống.
+            <br />
+            <a class="btn btn-outline-primary mt-3" href="/">Tiếp tục mua sắm</a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle shadow-sm">
+                <thead class="table-light">
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th class="text-end">Giá</th>
+                        <th class="text-center" style="width: 120px;">Số lượng</th>
+                        <th class="text-end">Thành tiền</th>
+                        <th class="text-center">Xoá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+                            <td>
+                                <strong>@item.Name</strong>
+                            </td>
+                            <td class="text-end">@item.Price.ToString("N0") VND</td>
+                            <td class="text-center">
+                                <input type="number"
+                                       value="@item.Quantity"
+                                       min="1"
+                                       class="form-control form-control-sm text-center"
+                                       onchange="updateQuantity(@item.ProductId, this.value)" />
+                            </td>
+                            <td class="text-end fw-semibold">
+                                @(item.Price * item.Quantity).ToString("N0") VND
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="RemoveItem"
+                                   asp-route-productId="@item.ProductId"
+                                   class="btn btn-sm btn-outline-danger"
+                                   title="Xóa khỏi giỏ hàng">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold">Tổng cộng:</td>
+                        <td class="text-end fw-bold text-primary fs-5" colspan="2">
+                            @Model.Items.Sum(i => i.Price * i.Quantity).ToString("N0") VND
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="text-end mt-4">
+            <a asp-action="Checkout" class="btn btn-lg btn-success px-4">
+                <i class="bi bi-cash-coin me-1"></i> Thanh toán
+            </a>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        function updateQuantity(productId, quantity) {
+            fetch("/ShoppingCart/UpdateQuantity", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: `productId=${productId}&quantity=${quantity}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    throw new Error("Không thể cập nhật số lượng.");
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                alert("❌ Có lỗi khi cập nhật giỏ hàng.");
+            });
+        }
+    </script>
+}

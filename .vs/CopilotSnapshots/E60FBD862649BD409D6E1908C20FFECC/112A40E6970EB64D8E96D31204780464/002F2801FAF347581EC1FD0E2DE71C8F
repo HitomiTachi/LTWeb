@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - NguyenNhan_2179_tuan3</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NguyenNhan_2179_tuan3.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-shop"></i> TNSHop
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                     
+                    </ul>
+
+                    <button class="btn btn-outline-dark" type="button" onclick="location.href='/ShoppingCart/Index'">
+                        <i class="bi-cart-fill me-1"></i> Giỏ hàng
+                    </button>
+
+                    <partial name="_LoginPartial" />
+                   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Carousel -->
+        <div id="productCarousel" class="carousel slide mb-5 shadow rounded" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Inner -->
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="~/images/3.jpg" class="d-block w-100" alt="Sản phẩm nổi bật" />
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Sản phẩm nổi bật</h5>
+                        <p>Khám phá bộ sưu tập mới nhất của chúng tôi.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/5.jpg" class="d-block w-100" alt="Ưu đãi đặc biệt" />
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Ưu đãi đặc biệt</h5>
+                        <p>Giảm giá hấp dẫn cho mọi đơn hàng trong tuần này.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/1.jpg" class="d-block w-100" alt="Chất lượng hàng đầu" />
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Chất lượng hàng đầu</h5>
+                        <p>Cam kết sản phẩm chính hãng, giao hàng toàn quốc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Trước</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Tiếp</span>
+            </button>
+        </div>
+
+        <!-- Main content -->
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-uppercase fw-bold">Mở Hàng Ngày</h6>
+                    <p class="mb-0">
+                        Tầng trệt | 7:30am - 10:00pm<br />
+                        Tầng một | 7:30am - 5:30pm
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase fw-bold">Dịch vụ khách hàng</h6>
+                    <p class="mb-0">
+                        Hotline: +84 902 77 42 44<br />
+                        Đối tác thương hiệu: +84 909 55 88 49<br />
+                        (Thứ 2 - Thứ 6, 09:00 - 18:00)
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase fw-bold">Địa chỉ</h6>
+                    <p class="mb-0">
+                        L1-20, Tòa nhà Vincom Mega Mall Grand Park<br />
+                        Thành Phố Thủ Đức, Tp. Hồ Chí Minh, Việt Nam
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small>&copy; 2025 NguyenNhan_2179_tuan3. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@model NguyenNhan_2179_tuan3.Models.Product
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+<h2>@Model.Name</h2>
+
+<div>
+    <p><strong>Giá:</strong> @Model.Price.ToString("N0") VNĐ</p>
+    <p><strong>Mô tả:</strong> @Model.Description</p>
+    <p><strong>Danh mục:</strong> @Model.Category?.Name</p>
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <img src="@Model.ImageUrl" alt="Ảnh sản phẩm" style="max-width: 300px;" />
+    }
+</div>

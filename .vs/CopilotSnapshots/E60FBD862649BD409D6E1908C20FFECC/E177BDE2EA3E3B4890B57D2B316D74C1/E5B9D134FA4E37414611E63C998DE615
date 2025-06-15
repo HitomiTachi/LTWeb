@@ -1,0 +1,20 @@
+﻿@model NguyenNhan_2179_tuan3.Models.Product
+<h2>@Model.Name</h2>
+<div>
+    <h3>Giá: @Model.Price</h3>
+    <p>@Model.Description</p>
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <div>
+            <label>Hình ảnh sản phẩm:</label><br />
+            <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" style="max-width:200px;" />
+        </div>
+    }
+    else
+    {
+        <div><em>Không có hình ảnh</em></div>
+    }
+</div>
+<div>
+    <a class="nav-link text-dark fw-semibold" asp-area="" asp-controller="Product" asp-action="IndexList">Danh sách sản phẩm</a>
+</div>

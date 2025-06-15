@@ -1,0 +1,35 @@
+﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Category>
+
+@{
+    ViewData["Title"] = "Danh sách danh mục";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Add" class="btn btn-primary">Thêm danh mục</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tên danh mục</th>
+          
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+               
+                <td>
+                    <a asp-action="Display" asp-route-id="@item.Id">Xem</a> |
+                    <a asp-action="Update" asp-route-id="@item.Id">Sửa</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -17,5 +17,7 @@ namespace NguyenNhan_2179_tuan3.Models
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
 
+        [Range(0, int.MaxValue, ErrorMessage = "Số lượng tồn phải >= 0")]
+        public int StockQuantity { get; set; }
     }
 }

@@ -1,9 +1,50 @@
 ﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Product>
 
 <link rel="stylesheet" href="~/css/product.css" asp-append-version="true" />
- 
+
 <section class="product-listing py-5">
     <div class="container">
+
+        <!-- FORM BỘ LỌC -->
+        <form method="get" class="row mb-4 g-3 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label">Danh mục</label>
+                <select name="categoryId" class="form-select">
+                    <option value="">Tất cả</option>
+                    @foreach (var cat in ViewBag.Categories)
+                    {
+                        bool selected = (ViewBag.SelectedCategoryId != null && (int)ViewBag.SelectedCategoryId == cat.Id);
+                        if (selected)
+                        {
+                            @:
+                            <option value="@cat.Id" selected>@cat.Name</option>
+                        }
+                        else
+                        {
+                            @:
+                            <option value="@cat.Id">@cat.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Giá từ</label>
+                <input type="number" name="minPrice" class="form-control" value="@(ViewBag.MinPrice ?? "")" placeholder="VNĐ" min="0" />
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Đến</label>
+                <input type="number" name="maxPrice" class="form-control" value="@(ViewBag.MaxPrice ?? "")" placeholder="VNĐ" min="0" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Tìm kiếm</label>
+                <input type="text" name="searchQuery" class="form-control" value="@(ViewBag.SearchQuery ?? "")" placeholder="Tên sản phẩm..." />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Lọc</button>
+            </div>
+        </form>
+
+        <!-- DANH SÁCH SẢN PHẨM -->
         @if (Model.Any())
         {
             <div class="row g-4">

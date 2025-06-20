@@ -9,7 +9,9 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\NguyenNhan
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\NguyenNhan_2179_tuan3.pdb
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\MailKit.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -57,6 +59,7 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -66,6 +69,7 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\MimeKit.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\NuGet.Common.dll
@@ -80,6 +84,8 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\NuGet.Vers
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Composition.AttributedModel.dll
@@ -93,6 +99,7 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Ide
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Security.Permissions.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Windows.Extensions.dll
@@ -264,6 +271,7 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\w
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.csproj.AssemblyReference.cache
@@ -275,24 +283,16 @@ C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.RazorAssemblyInfo.cache
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.RazorAssemblyInfo.cs
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.sourcelink.json
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\scopedcss\bundle\NguyenNhan_2179_tuan3.styles.css
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNh.1BB2B816.Up2Date
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\refint\NguyenNhan_2179_tuan3.dll
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.pdb
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.genruntimeconfig.cache
 C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\ref\NguyenNhan_2179_tuan3.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\NguyenNhan_2179_tuan3.sourcelink.json
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\MailKit.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\MimeKit.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Nhan\OneDrive\Desktop\NguyenNhan_2179_tuan3\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

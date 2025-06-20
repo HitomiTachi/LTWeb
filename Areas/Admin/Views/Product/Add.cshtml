@@ -25,6 +25,12 @@
             <label asp-for="Description" class="form-label fw-semibold">Mô Tả</label>
             <textarea asp-for="Description" class="form-control" rows="4" placeholder="Nhập mô tả sản phẩm"></textarea>
             <span asp-validation-for="Description" class="text-danger"></span>
+        </div
+
+        <div class="form-group">
+            <label for="StockQuantity">Số lượng tồn</label>
+            <input asp-for="StockQuantity" class="form-control" min="0" type="number" />
+            <span asp-validation-for="StockQuantity" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
@@ -36,16 +42,22 @@
         </div>
 
         <div class="mb-3">
-            <label asp-for="ImageUrl" class="form-label fw-semibold">Hình Ảnh</label>
+            <label asp-for="ImageUrl" class="form-label fw-semibold">Hình Ảnh Đại Diện</label>
             <input type="file" class="form-control" name="imageFile" accept="image/*" />
             <span asp-validation-for="ImageUrl" class="text-danger"></span>
 
             @if (!string.IsNullOrEmpty(Model?.ImageUrl))
             {
-            <div style="margin-top:10px;">
-                <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" style="max-width:150px; max-height:150px;" />
-            </div>
+                <div style="margin-top:10px;">
+                    <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" style="max-width:150px; max-height:150px;" />
+                </div>
             }
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Ảnh Phụ (có thể chọn nhiều ảnh)</label>
+            <input type="file" class="form-control" name="Images" accept="image/*" multiple />
+            <div id="previewMultiImages" class="mt-2 d-flex flex-wrap" style="gap:8px;"></div>
         </div>
 
         <div class="d-flex justify-content-between">
@@ -72,7 +84,7 @@
             });
     </script>
 
-    <!-- Xem trước ảnh -->
+    <!-- Xem trước ảnh đại diện -->
     <script>
         const imageInput = document.querySelector('input[name="imageFile"]');
         const previewContainer = document.createElement('div');
@@ -99,6 +111,30 @@
             } else {
                 previewImage.src = "/images/default-product.png";
             }
+        });
+    </script>
+
+    <!-- Xem trước nhiều ảnh phụ -->
+    <script>
+        const multiImageInput = document.querySelector('input[name="Images"]');
+        const previewMultiImages = document.getElementById('previewMultiImages');
+        multiImageInput.addEventListener('change', function () {
+            previewMultiImages.innerHTML = '';
+            Array.from(this.files).forEach(file => {
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.maxWidth = "90px";
+                        img.style.maxHeight = "90px";
+                        img.style.objectFit = "cover";
+                        img.classList.add("border", "rounded");
+                        previewMultiImages.appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
         });
     </script>
 }

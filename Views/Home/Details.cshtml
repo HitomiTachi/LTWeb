@@ -1,6 +1,30 @@
 ﻿@model Product
 
 <h1>@Model.Name</h1>
-<p>Price: @Model.Price</p>
-<p>Description: @Model.Description</p>
-<img src="@Model.ImageUrl" alt="@Model.Name" />
+<p>Giá: @Model.Price.ToString("N0") VNĐ</p>
+<p>Mô tả: @Model.Description</p>
+
+@if (!string.IsNullOrEmpty(Model.ImageUrl))
+{
+    <div class="mb-3">
+        <img src="@Model.ImageUrl" alt="@Model.Name" style="max-width:300px;" />
+        <div><small>Ảnh đại diện</small></div>
+    </div>
+}
+
+@if (Model.Images != null && Model.Images.Any())
+{
+    <h4>Các hình ảnh khác:</h4>
+    <div class="row">
+        @foreach (var img in Model.Images)
+        {
+            <div class="col-md-3 mb-3">
+                <img src="@img.Url" alt="Ảnh phụ" class="img-fluid rounded border" style="object-fit:cover;width:100%;height:200px;" />
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Chưa có hình ảnh phụ cho sản phẩm này!</p>
+}

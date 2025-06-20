@@ -1,0 +1,33 @@
+﻿@model NguyenNhan_2179_tuan3.Models.Product
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+<h2>@Model.Name</h2>
+<p><strong>Giá:</strong> @Model.Price.ToString("N0") VNĐ</p>
+<p><strong>Mô tả:</strong> @Html.Raw(Model.Description)</p>
+@if (!string.IsNullOrEmpty(Model.ImageUrl))
+{
+    <div class="mb-3">
+        <label>Hình ảnh sản phẩm:</label><br />
+        <img src="@Model.ImageUrl" alt="Ảnh sản phẩm" style="max-width: 300px;" class="rounded border" />
+    </div>
+}
+
+@if (Model.Images != null && Model.Images.Any())
+{
+    <div class="mb-3">
+        <label>Ảnh phụ:</label><br />
+        <div class="d-flex flex-wrap" style="gap:10px;">
+            @foreach (var img in Model.Images)
+            {
+                <img src="@img.Url" alt="Ảnh phụ" style="width:100px;height:100px;object-fit:cover;" class="rounded border" />
+            }
+        </div>
+    </div>
+}
+else
+{
+    <div class="mb-3"><span>Không có ảnh phụ.</span></div>
+}
+<a asp-action="IndexList" class="btn btn-secondary mt-2">Danh sách sản phẩm</a>

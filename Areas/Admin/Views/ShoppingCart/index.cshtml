@@ -45,7 +45,7 @@
                                        onchange="updateQuantity(@item.ProductId, this.value)" />
                             </td>
                             <td class="text-end fw-semibold">
-                                @(item.Price * item.Quantity).ToString("N0") VND
+                                @(item.Price * item.Quantity) VND
                             </td>
                             <td class="text-center">
                                 <a asp-action="RemoveItem"

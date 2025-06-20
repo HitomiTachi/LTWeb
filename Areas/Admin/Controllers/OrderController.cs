@@ -82,11 +82,22 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
 
             if (order != null)
             {
+                // --- HOÀN LẠI TỒN KHO ---
+                foreach (var detail in order.OrderDetails)
+                {
+                    var product = await _context.Products.FindAsync(detail.ProductId);
+                    if (product != null)
+                    {
+                        product.StockQuantity += detail.Quantity;
+                        _context.Products.Update(product);
+                    }
+                }
+
                 _context.OrderDetails.RemoveRange(order.OrderDetails);
                 _context.Orders.Remove(order);
                 await _context.SaveChangesAsync();
 
-                // Gửi email thông báo hủy đơn cho user (ghi rõ thông tin)
+                // Gửi email thông báo hủy đơn cho user
                 var user = order.ApplicationUser;
                 if (user != null && !string.IsNullOrEmpty(user.Email))
                 {
@@ -107,7 +118,7 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                     );
                 }
 
-                TempData["Message"] = "Đã hủy đơn hàng và gửi email thành công!";
+                TempData["Message"] = "Đã hủy đơn hàng, hoàn lại tồn kho và gửi email thành công!";
             }
             else
             {

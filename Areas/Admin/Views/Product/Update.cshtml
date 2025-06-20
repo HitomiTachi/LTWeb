@@ -32,6 +32,14 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
 
+    <!-- THÊM TRƯỜNG SỐ LƯỢNG TỒN KHO Ở ĐÂY -->
+    <div class="form-group">
+        <label asp-for="StockQuantity"></label>
+        <input asp-for="StockQuantity" class="form-control" type="number" min="0" />
+        <span asp-validation-for="StockQuantity" class="text-danger"></span>
+    </div>
+    <!-- HẾT THÊM -->
+
     <div class="form-group">
         <label asp-for="CategoryId"></label>
         <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control"></select>
@@ -56,10 +64,82 @@
         <span asp-validation-for="ImageUrl" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Cập nhật</button>
-    <a asp-action="IndexList" class="btn btn-secondary">Hủy</a>
+    <div class="form-group mt-4">
+        <label>Ảnh phụ hiện có:</label>
+        @if (Model.Images != null && Model.Images.Any())
+        {
+            <div class="d-flex flex-wrap" style="gap:12px;">
+                @foreach (var img in Model.Images)
+                {
+                    <div class="position-relative" style="display:inline-block;">
+                        <img src="@img.Url" class="img-thumbnail" style="width:90px; height:90px; object-fit:cover;" />
+                        <!-- Xóa ảnh phụ (option, cần controller xử lý) -->
+                        <button type="button" class="btn btn-danger btn-sm position-absolute top-0 end-0 remove-sub-image"
+                                data-img-id="@img.Id" title="Xóa ảnh phụ" style="transform:translate(30%,-30%);">
+                            &times;
+                        </button>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div>Không có ảnh phụ.</div>
+        }
+    </div>
+
+    <div class="form-group mt-2">
+        <label for="Images">Thêm ảnh phụ mới (có thể chọn nhiều):</label>
+        <input type="file" name="Images" class="form-control" accept="image/*" multiple />
+        <div id="previewMultiImages" class="mt-2 d-flex flex-wrap" style="gap:8px;"></div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Cập nhật</button>
+    <a asp-action="IndexList" class="btn btn-secondary mt-3">Hủy</a>
 </form>
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <!-- Xem trước nhiều ảnh phụ mới -->
+    <script>
+        const multiImageInput = document.querySelector('input[name="Images"]');
+        const previewMultiImages = document.getElementById('previewMultiImages');
+        if (multiImageInput) {
+            multiImageInput.addEventListener('change', function () {
+                previewMultiImages.innerHTML = '';
+                Array.from(this.files).forEach(file => {
+                    if (file && file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.style.maxWidth = "90px";
+                            img.style.maxHeight = "90px";
+                            img.style.objectFit = "cover";
+                            img.classList.add("border", "rounded");
+                            previewMultiImages.appendChild(img);
+                        }
+                        reader.readAsDataURL(file);
+                    }
+                });
+            });
+        }
+
+        // Xóa ảnh phụ (cần controller nhận AJAX xóa ảnh)
+        document.querySelectorAll('.remove-sub-image').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const imgId = this.getAttribute('data-img-id');
+                if (confirm('Bạn có chắc chắn muốn xóa ảnh phụ này?')) {
+                    fetch('@Url.Action("RemoveSubImage", "Product", new { area = "Admin" })' + '?imgId=' + imgId, {
+                        method: 'POST',
+                        headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() }
+                    }).then(response => {
+                        if (response.ok) location.reload();
+                        else alert('Không thể xóa ảnh phụ!');
+                    });
+                }
+            });
+        });
+    </script>
 }

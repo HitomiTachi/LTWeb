@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Extensions;
 using NguyenNhan_2179_tuan3.Models;
+using System.Security.Claims;
 
 namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
 {
@@ -18,23 +19,45 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
             _context = context;
         }
 
+        // Helper để lấy key giỏ hàng phù hợp user
+        private string GetCartKey()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                return $"Cart_{userId}";
+            }
+            return "Cart";
+        }
+
         // GET: /Admin/ShoppingCart
         public IActionResult Index()
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
             return View(cart);
         }
 
         // POST: /Admin/ShoppingCart/UpdateQuantity
         [HttpPost]
-        public IActionResult UpdateQuantity(int productId, int quantity)
+        public async Task<IActionResult> UpdateQuantity(int productId, int quantity)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
             var item = cart.Items.FirstOrDefault(i => i.ProductId == productId);
+
+            // Lấy thông tin sản phẩm để kiểm tra tồn kho
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null)
+                return NotFound();
+
+            if (quantity > product.StockQuantity)
+            {
+                return BadRequest($"Chỉ còn {product.StockQuantity} sản phẩm trong kho.");
+            }
+
             if (item != null)
             {
                 item.Quantity = quantity > 0 ? quantity : 1;
-                HttpContext.Session.SetObjectAsJson("Cart", cart);
+                HttpContext.Session.SetObjectAsJson(GetCartKey(), cart);
                 return Ok();
             }
             return BadRequest();
@@ -43,9 +66,9 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
         // GET: /Admin/ShoppingCart/RemoveItem?productId=xxx
         public IActionResult RemoveItem(int productId)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
             cart.Items.RemoveAll(i => i.ProductId == productId);
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            HttpContext.Session.SetObjectAsJson(GetCartKey(), cart);
             return RedirectToAction("Index");
         }
 
@@ -53,7 +76,7 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetCartCount()
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
             return Json(new { count = cart.Items.Sum(i => i.Quantity) });
         }
 
@@ -61,13 +84,12 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Checkout()
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
             if (cart == null || !cart.Items.Any())
             {
                 TempData["Error"] = "Giỏ hàng trống!";
                 return RedirectToAction("Index");
             }
-            // KHÔNG truyền cart vào view, chỉ trả về form với model Order
             return View(new Order());
         }
 
@@ -76,7 +98,7 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Checkout(Order order)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey());
             if (cart == null || !cart.Items.Any())
             {
                 TempData["Error"] = "Giỏ hàng trống!";
@@ -90,6 +112,30 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
+            // Kiểm tra tồn kho trước khi đặt
+            foreach (var item in cart.Items)
+            {
+                var product = await _context.Products.FindAsync(item.ProductId);
+                if (product == null)
+                {
+                    TempData["Error"] = $"Sản phẩm không tồn tại!";
+                    return RedirectToAction("Index");
+                }
+                if (item.Quantity > product.StockQuantity)
+                {
+                    TempData["Error"] = $"Sản phẩm {item.Name} chỉ còn {product.StockQuantity} cái!";
+                    return RedirectToAction("Index");
+                }
+            }
+
+            // Trừ tồn kho
+            foreach (var item in cart.Items)
+            {
+                var product = await _context.Products.FindAsync(item.ProductId);
+                product.StockQuantity -= item.Quantity;
+                _context.Products.Update(product);
+            }
+
             order.UserId = user.Id;
             order.OrderDate = DateTime.UtcNow;
             order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
@@ -99,16 +145,44 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 Quantity = i.Quantity,
                 Price = i.Price
             }).ToList();
-
-            // SỬA: Thêm giá trị mặc định cho Status
             order.Status = "Chờ xác nhận";
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
-            HttpContext.Session.Remove("Cart");
+            HttpContext.Session.Remove(GetCartKey());
 
-            // Truyền order.Id sang view hoàn tất
             return View("OrderCompleted", order.Id);
+        }
+
+        // POST: /Admin/ShoppingCart/CancelOrder
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CancelOrder(int orderId)
+        {
+            var order = await _context.Orders
+                .Include(o => o.OrderDetails)
+                .FirstOrDefaultAsync(o => o.Id == orderId);
+
+            if (order == null || order.Status == "Đã hủy")
+                return NotFound();
+
+            // Hoàn lại tồn kho cho từng sản phẩm trong đơn
+            foreach (var detail in order.OrderDetails)
+            {
+                var product = await _context.Products.FindAsync(detail.ProductId);
+                if (product != null)
+                {
+                    product.StockQuantity += detail.Quantity;
+                    _context.Products.Update(product);
+                }
+            }
+
+            order.Status = "Đã hủy";
+            _context.Orders.Update(order);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Đã huỷ đơn và hoàn lại tồn kho!";
+            return RedirectToAction("OrderList"); // hoặc trang quản lý đơn hàng
         }
     }
 }

@@ -1,0 +1,31 @@
+﻿@model NguyenNhan_2179_tuan3.Models.Order
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+    var details = ViewBag.OrderDetails as List<NguyenNhan_2179_tuan3.Models.OrderDetail>;
+}
+
+<h2>Chi tiết đơn hàng #@Model.Id</h2>
+<p>Ngày đặt: @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</p>
+<p>Tổng tiền: @Model.TotalPrice.ToString("N0") VNĐ</p>
+<p>Trạng thái: @Model.Status</p>
+
+@if (details != null && details.Any())
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+        </tr>
+        @foreach (var d in details)
+        {
+            <tr>
+                <td>@d.Product</td>
+                <td>@d.Quantity</td>
+                <td>@d.Price.ToString("N0")</td>
+                <td>@((d.Quantity * d.Price).ToString("N0"))</td>
+            </tr>
+        }
+    </table>
+}

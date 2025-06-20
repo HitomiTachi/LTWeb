@@ -96,8 +96,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Areas/Admin/Views/Product/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+[C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Areas/Admin/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Areas/Admin/Views/Product/Display.cshtml]
@@ -178,6 +178,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Views/Order/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nhan/OneDrive/Desktop/NguyenNhan_2179_tuan3/Views/Shared/Error.cshtml]

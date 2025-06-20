@@ -1,32 +1,33 @@
 ﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Product>
 
-
 @{
-    ViewData["Title"] = "Danh Sách Sản Phẩm";
-    int numQuantity = 1;
+    ViewData["Title"] = "Quản lý sản phẩm";
 }
 
-<!-- Section chính -->
 <section class="py-5 bg-light">
     <div class="container px-4 px-lg-5">
-        <!-- Tiêu đề -->
         <div class="text-center mb-5">
-            <p class="text-muted fs-5 fst-italic">Khám phá những sản phẩm chất lượng cao và phù hợp với bạn</p>
+            <h2 class="fw-bold text-uppercase">Quản lý sản phẩm</h2>
+            <p class="text-muted fs-5 fst-italic">Danh sách tất cả sản phẩm trong hệ thống</p>
         </div>
 
-        <!-- Trường hợp không có sản phẩm -->
+        <div class="mb-3 text-end">
+            <a class="btn btn-success" asp-action="Add">
+                <i class="bi bi-plus-circle me-1"></i> Thêm sản phẩm mới
+            </a>
+        </div>
+
         @if (!Model.Any())
         {
             <div class="text-center py-5">
                 <i class="bi bi-box-seam-fill text-secondary" style="font-size: 4rem;"></i>
                 <h4 class="mt-3 text-muted">Chưa có sản phẩm nào</h4>
-                <p class="text-muted">Hãy thêm sản phẩm đầu tiên để bắt đầu bán hàng!</p>
+                <p class="text-muted">Hãy thêm sản phẩm đầu tiên để bắt đầu quản lý!</p>
             </div>
         }
         else
         {
-            <!-- Giao diện bảng DataTable -->
-            <h4 class="mb-3"><i class="bi bi-table"></i> Giao diện Bảng Sản Phẩm</h4>
+            <h4 class="mb-3"><i class="bi bi-table"></i> Bảng quản trị sản phẩm</h4>
             <div class="table-responsive shadow-sm rounded bg-white p-3 mb-5">
                 <table id="productTable" class="table table-hover align-middle">
                     <thead class="table-dark text-center">
@@ -34,7 +35,10 @@
                             <th>Tên</th>
                             <th>Mô tả</th>
                             <th>Giá</th>
-                            <th>Hình ảnh</th>
+                            <th>Danh mục</th>
+                            <th>Ảnh đại diện</th>
+                            <th>Ảnh phụ</th>
+                            <th>Số lượng tồn</th> <!-- Thêm cột số lượng tồn -->
                             <th>Thao tác</th>
                         </tr>
                     </thead>
@@ -43,32 +47,62 @@
                         {
                             <tr>
                                 <td>@item.Name</td>
-                                <td>@Html.Raw(item.Description)</td>
+                                <td style="max-width:200px;">@Html.Raw(item.Description)</td>
                                 <td>@item.Price.ToString("#,##0") VND</td>
+                                <td>@item.Category?.Name</td>
                                 <td class="text-center">
-                                    <img src="@item.ImageUrl" width="100" height="100"
-                                         class="img-thumbnail rounded-circle border border-2"
-                                         style="object-fit: cover;" />
+                                    @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                    {
+                                        <img src="@item.ImageUrl" width="70" height="70"
+                                             class="img-thumbnail border border-2"
+                                             style="object-fit:cover;" />
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted fst-italic">Không có ảnh</span>
+                                    }
                                 </td>
                                 <td class="text-center">
-                                    <!-- Nút Mua ngay cho admin -->
-                                    <button class="btn btn-sm btn-success mb-1 rounded-pill"
-                                            onclick="addToCart(@item.Id, 1)">
-                                        <i class="bi bi-cart-plus-fill"></i> Mua ngay
-                                    </button>
-                                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id"
-                                       class="btn btn-sm btn-outline-primary rounded-pill">
+                                    @if (item.Images != null && item.Images.Any())
+                                    {
+                                        <div class="d-flex flex-wrap gap-1 justify-content-center">
+                                            @foreach (var img in item.Images.Take(3))
+                                            {
+                                                <img src="@img.Url" width="55" height="55"
+                                                     class="img-thumbnail border"
+                                                     style="object-fit:cover;" />
+                                            }
+                                            @if (item.Images.Count > 3)
+                                            {
+                                                <span class="badge bg-secondary align-self-center">+@((item.Images.Count) - 3)</span>
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted fst-italic">Không</span>
+                                    }
+                                </td>
+                                <td class="text-center">
+                                    <span class="fw-bold">@item.StockQuantity</span> <!-- Hiển thị số lượng tồn -->
+                                </td>
+                                <td class="text-center">
+                                    <a asp-action="Details" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-outline-primary rounded-pill mb-1">
                                         <i class="bi bi-eye-fill"></i> Xem
                                     </a>
-                                    <a class="btn btn-outline-warning flex-fill btn-sm"
-                                       asp-action="Update" asp-route-id="@item.Id">
+                                    <a asp-action="Update" asp-route-id="@item.Id"
+                                       class="btn btn-outline-warning btn-sm rounded-pill mb-1">
                                         <i class="bi bi-pencil me-1"></i>Sửa
                                     </a>
-                                    <a class="btn btn-outline-danger flex-fill btn-sm"
-                                       asp-action="Delete" asp-route-id="@item.Id"
+                                    <a asp-action="Delete" asp-route-id="@item.Id"
+                                       class="btn btn-outline-danger btn-sm rounded-pill mb-1"
                                        onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?')">
                                         <i class="bi bi-trash me-1"></i>Xóa
                                     </a>
+                                    <button onclick="addToCart(@item.Id, 1)" class="btn btn-success btn-sm rounded-pill mb-1">
+                                        <i class="bi bi-cart-plus"></i> Thêm vào giỏ
+                                    </button>
                                 </td>
                             </tr>
                         }
@@ -80,56 +114,48 @@
 </section>
 
 @section Scripts {
-    <!-- jQuery (luôn phải đứng trước DataTables) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- DataTables CSS & JS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <style>
+        .dataTables_wrapper .dataTables_filter input {
+            margin-left: 0.5em;
+        }
+
         .toast-notification {
             position: fixed;
-            top: 24px;
-            right: 24px;
+            top: 20px;
+            right: 20px;
             z-index: 9999;
+            background: #fff;
+            color: #333;
+            border-radius: 6px;
+            padding: 14px 24px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.16);
             opacity: 0;
-            transition: opacity 0.3s, top 0.3s;
-            min-width: 260px;
+            transition: opacity 0.2s, transform 0.2s;
+            pointer-events: auto;
+            min-width: 240px;
         }
 
             .toast-notification.show {
                 opacity: 1;
-                top: 48px;
+                transform: translateY(0);
             }
 
-            .toast-notification.success .toast-content {
-                background: #198754;
-                color: #fff;
+            .toast-notification.success {
+                border-left: 6px solid #28a745;
             }
 
-            .toast-notification.error .toast-content {
-                background: #dc3545;
-                color: #fff;
+            .toast-notification.error {
+                border-left: 6px solid #dc3545;
             }
-
-        .toast-content {
-            padding: 16px 24px 16px 16px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .toast-message {
-            flex: 1;
-        }
 
         .toast-close {
             background: none;
             border: none;
-            font-size: 1.3rem;
-            color: #fff;
-            margin-left: 12px;
+            font-size: 1.2em;
+            float: right;
             cursor: pointer;
         }
     </style>
@@ -137,8 +163,8 @@
         $(document).ready(function () {
             $('#productTable').DataTable({
                 responsive: true,
-                pageLength: 5,
-                lengthMenu: [5, 10, 25, 50],
+                pageLength: 10,
+                lengthMenu: [10, 20, 40, 80],
                 language: {
                     search: "🔍 Tìm kiếm:",
                     lengthMenu: "Hiển thị _MENU_ sản phẩm",
@@ -153,31 +179,40 @@
                     infoEmpty: "Chưa có dữ liệu",
                 }
             });
-
-            // Cập nhật lần đầu khi trang tải
-            updateCartCount();
         });
 
+        const isAuthenticated = @User.Identity.IsAuthenticated.ToString().ToLower();
+
         function addToCart(productId, quantity = 1) {
-            fetch("/ShoppingCart/AddToCart", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                },
+            if (!isAuthenticated) {
+                window.location.href = "/Identity/Account/Login?returnUrl=" + encodeURIComponent(window.location.pathname);
+                return;
+            }
+
+            fetch('/ShoppingCart/AddToCart', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `productId=${productId}&quantity=${quantity}`
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success !== false) {
-                    showToast(data.message || "Đã thêm vào giỏ hàng!", 'success');
+                .then(async (response) => {
+                    if (response.redirected) {
+                        window.location.href = response.url;
+                        return;
+                    }
+                    let data;
+                    try {
+                        data = await response.json();
+                    } catch (e) {
+                        showToast("❌ Lỗi server hoặc không nhận đúng JSON!", 'error');
+                        return;
+                    }
+                    const toastMsg = data.success ?
+                        `✅ ${data.message || 'Đã thêm vào giỏ hàng'}` :
+                        `❌ ${data.message || 'Lỗi khi thêm vào giỏ hàng'}`;
+                    showToast(toastMsg, data.success ? 'success' : 'error');
                     updateCartCount();
-                } else {
-                    showToast(data.message || "Có lỗi khi thêm vào giỏ hàng!", 'error');
-                }
-            })
-            .catch(err => {
-                showToast("Có lỗi xảy ra khi thêm vào giỏ hàng!", 'error');
-            });
+                })
+                .catch(() => showToast("❌ Lỗi kết nối tới server", 'error'));
         }
 
         function updateCartCount() {
@@ -197,6 +232,8 @@
         }
 
         function showToast(message, type = 'success') {
+            // Xoá toast cũ nếu còn
+            document.querySelectorAll('.toast-notification').forEach(e => e.remove());
             const toast = document.createElement("div");
             toast.className = `toast-notification ${type}`;
             toast.innerHTML = `
@@ -215,5 +252,7 @@
                 setTimeout(() => toast.remove(), 300);
             });
         }
+
+        document.addEventListener("DOMContentLoaded", updateCartCount);
     </script>
 }

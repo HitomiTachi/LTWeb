@@ -4,12 +4,12 @@
     "\\Areas",
     "\\Areas\\Admin",
     "\\Areas\\Admin\\Controllers",
-    "\\Controllers",
+    "\\Areas\\Admin\\Views",
+    "\\Areas\\Admin\\Views\\ShoppingCart",
+    "\\Models",
     "\\Views",
     "\\Views\\Home",
-    "\\Views\\Shared",
-    "\\wwwroot",
-    "\\wwwroot\\css"
+    "\\Views\\ShoppingCart"
   ],
   "SelectedNode": "\\NguyenNhan_2179_tuan3.sln",
   "PreviewInSolutionExplorer": false

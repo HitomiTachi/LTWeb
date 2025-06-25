@@ -1,35 +1,152 @@
 ﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Category>
 
 @{
-    ViewData["Title"] = "Danh sách danh mục";
+    ViewData["Title"] = "Quản lý danh mục";
+    var editId = Context.Request.Query["editId"].FirstOrDefault();
+    int.TryParse(editId, out int editIdInt);
 }
 
-<h2>@ViewData["Title"]</h2>
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">@ViewData["Title"]</h2>
+    </div>
 
-<p>
-    <a asp-action="Add" class="btn btn-primary">Thêm danh mục</a>
-</p>
+    <!-- Form thêm và tìm kiếm danh mục -->
+    <div class="mb-4">
+        <div class="card-body">
+            <form asp-action="Add" method="post" class="row g-3 align-items-end" id="addCategoryForm" autocomplete="off">
+                <!-- Nhập tên danh mục -->
+                <div class="col-md-5 col-sm-12">
+                    <label for="newCategoryName" class="form-label">Tên danh mục mới</label>
+                    <input id="newCategoryName" name="Name" class="form-control" placeholder="Nhập tên danh mục" required />
+                    <div id="categoryNameStatus" class="small mt-1"></div>
+                </div>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Tên danh mục</th>
-          
-            <th>Hành động</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Name</td>
-               
-                <td>
-                    <a asp-action="Display" asp-route-id="@item.Id">Xem</a> |
-                    <a asp-action="Update" asp-route-id="@item.Id">Sửa</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                <!-- Nút thêm -->
+                <div class="col-md-auto col-12">
+                    <label class="form-label d-none d-md-block">&nbsp;</label>
+                    <button type="submit" class="btn btn-success w-100" id="btnAddCategory">
+                        <i class="bi bi-plus-circle me-1"></i>Thêm
+                    </button>
+                </div>
+
+                <!-- Ô tìm kiếm -->
+                <div class="col-md ms-md-auto col-12">
+                    <label for="categorySearch" class="form-label">Tìm kiếm danh mục</label>
+                    <input type="text" id="categorySearch" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách danh mục -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 60%;">Tên danh mục</th>
+                    <th style="width: 40%;">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-start ps-3">
+                            @if (editIdInt == item.Id)
+                            {
+                                <form asp-action="Update" method="post" class="d-flex flex-wrap gap-2 align-items-center">
+                                    <input type="hidden" name="Id" value="@item.Id" />
+                                    <input type="text" name="Name" value="@item.Name" class="form-control" required style="max-width:220px;" />
+                                    <button type="submit" class="btn btn-primary btn-sm">Lưu</button>
+                                    <a asp-action="Index" class="btn btn-secondary btn-sm">Hủy</a>
+                                </form>
+                            }
+                            else
+                            {
+                                <span class="fw-semibold">@item.Name</span>
+                            }
+                        </td>
+                        <td>
+                            @if (editIdInt == item.Id)
+                            {
+                                <span class="text-muted fst-italic">Đang chỉnh sửa...</span>
+                            }
+                            else
+                            {
+                                <div class="d-flex justify-content-center gap-2 flex-wrap">
+                                    <a asp-action="Index" asp-route-editId="@item.Id"
+                                       class="btn btn-warning btn-sm"
+                                       onclick="return confirm('Bạn có chắc chắn muốn sửa danh mục này?');">
+                                        <i class="bi bi-pencil-square me-1"></i>Sửa
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id"
+                                       class="btn btn-danger btn-sm"
+                                       onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục này?');">
+                                        <i class="bi bi-trash me-1"></i>Xóa
+                                    </a>
+                                </div>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        const nameInput = document.getElementById('newCategoryName');
+        const statusDiv = document.getElementById('categoryNameStatus');
+        const btnAdd = document.getElementById('btnAddCategory');
+        let lastValue = "";
+
+        nameInput.addEventListener('input', function () {
+            const name = nameInput.value.trim();
+            if (name.length === 0) {
+                statusDiv.textContent = "";
+                btnAdd.disabled = false;
+                return;
+            }
+            if (name === lastValue) return;
+            lastValue = name;
+
+            fetch(`/Admin/Categories/CheckName?name=${encodeURIComponent(name)}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.exists) {
+                        statusDiv.innerHTML = '<span class="text-danger">Tên danh mục đã tồn tại!</span>';
+                        btnAdd.disabled = true;
+                    } else {
+                        statusDiv.innerHTML = ''; // Không hiện thông báo "Bạn có thể thêm danh mục này."
+                        btnAdd.disabled = false;
+                    }
+                })
+                .catch(() => {
+                    statusDiv.innerHTML = '<span class="text-danger">Không kiểm tra được tên.</span>';
+                    btnAdd.disabled = false;
+                });
+        });
+
+        document.getElementById('addCategoryForm').addEventListener('submit', function (e) {
+            if (btnAdd.disabled) {
+                e.preventDefault();
+            }
+        });
+
+        document.getElementById('categorySearch').addEventListener('input', function () {
+            const search = this.value.trim().toLowerCase();
+            const rows = document.querySelectorAll('table tbody tr');
+            rows.forEach(row => {
+                const nameCell = row.querySelector('td');
+                if (!nameCell) return;
+                const name = nameCell.textContent.trim().toLowerCase();
+                row.style.display = name.includes(search) ? '' : 'none';
+            });
+        });
+    </script>
+}

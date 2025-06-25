@@ -192,5 +192,44 @@ namespace NguyenNhan_2179_tuan3.Controllers
             int count = cart.Items.Sum(i => i.Quantity);
             return Json(new { count });
         }
+
+        [HttpPost]
+        public async Task<IActionResult> BuyNow(int productId, int quantity = 1)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("/Identity/Account/Login?returnUrl=" + Url.Action("Index", "ShoppingCart"));
+            }
+
+            if (quantity <= 0) quantity = 1;
+
+            var product = await _productRepository.GetByIdAsync(productId);
+            if (product == null)
+                return NotFound();
+
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
+            var existingItem = cart.Items.FirstOrDefault(i => i.ProductId == productId);
+            int totalQuantity = (existingItem?.Quantity ?? 0) + quantity;
+
+            if (product.GetType().GetProperty("StockQuantity") != null && totalQuantity > (int)product.GetType().GetProperty("StockQuantity").GetValue(product))
+            {
+                int stock = (int)product.GetType().GetProperty("StockQuantity").GetValue(product);
+                TempData["Error"] = $"Chỉ còn {stock} sản phẩm trong kho.";
+                return RedirectToAction("Index");
+            }
+
+            var cartItem = new CartItem
+            {
+                ProductId = productId,
+                Name = product.Name,
+                Price = product.Price,
+                Quantity = quantity
+            };
+
+            cart.AddItem(cartItem);
+            HttpContext.Session.SetObjectAsJson(GetCartKey(), cart);
+
+            return RedirectToAction("Index");
+        }
     }
 }

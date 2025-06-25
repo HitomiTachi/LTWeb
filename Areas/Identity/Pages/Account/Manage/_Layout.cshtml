@@ -1,0 +1,71 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<div class="container py-5">
+    @* <div class="text-center mb-5">
+        <h1 class="fw-bold text-gradient">👤 Quản lý tài khoản</h1>
+        <p class="text-muted fs-5">Tùy chỉnh thông tin cá nhân và bảo mật tài khoản của bạn</p>
+    </div> *@
+    <h1 class="mb-4 fw-semibold text-primary">
+        <i class="bi bi-person-gear me-2"></i> Quản lý tài khoản
+    </h1>
+    <div class="row g-4">
+        <!-- Navigation Menu -->
+        <div class="col-md-4 col-lg-3">
+            <div class="bg-white rounded-4 shadow p-3">
+                <partial name="_ManageNav" />
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="col-md-8 col-lg-9">
+            <div class="bg-white rounded-4 shadow p-4">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h1 i {
+        color: #0d6efd;
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 0.5rem;
+        padding: 0.6rem 1rem;
+        color: #0d6efd;
+        transition: all 0.3s;
+    }
+
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .nav-pills .nav-link:hover {
+            background-color: #e9ecef;
+        }
+
+    .card {
+        background-color: white;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

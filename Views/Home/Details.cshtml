@@ -1,30 +1,154 @@
-﻿@model Product
+﻿@model NguyenNhan_2179_tuan3.Models.Product
 
-<h1>@Model.Name</h1>
-<p>Giá: @Model.Price.ToString("N0") VNĐ</p>
-<p>Mô tả: @Model.Description</p>
-
-@if (!string.IsNullOrEmpty(Model.ImageUrl))
-{
-    <div class="mb-3">
-        <img src="@Model.ImageUrl" alt="@Model.Name" style="max-width:300px;" />
-        <div><small>Ảnh đại diện</small></div>
-    </div>
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
 }
 
-@if (Model.Images != null && Model.Images.Any())
-{
-    <h4>Các hình ảnh khác:</h4>
-    <div class="row">
-        @foreach (var img in Model.Images)
-        {
-            <div class="col-md-3 mb-3">
-                <img src="@img.Url" alt="Ảnh phụ" class="img-fluid rounded border" style="object-fit:cover;width:100%;height:200px;" />
+<link rel="stylesheet" href="~/css/product.css" asp-append-version="true" />
+
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="mb-0"><i class="bi bi-eye me-2"></i>@Model.Name</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-4">
+                            <!-- Hình ảnh -->
+                            <div class="col-md-5">
+                                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                                {
+                                    <img src="@Model.ImageUrl" alt="Ảnh sản phẩm" class="img-fluid rounded border w-100" style="object-fit:cover; max-height:300px;" />
+                                }
+                                else
+                                {
+                                    <div class="text-muted fst-italic">Không có ảnh chính</div>
+                                }
+
+                                @if (Model.Images != null && Model.Images.Any())
+                                {
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        @foreach (var img in Model.Images)
+                                        {
+                                            <img src="@img.Url" alt="Ảnh phụ" style="width:90px; height:90px; object-fit:cover;" class="rounded border" />
+                                        }
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="text-muted fst-italic mt-2">Không có ảnh phụ</div>
+                                }
+                            </div>
+
+                            <!-- Thông tin sản phẩm -->
+                            <div class="col-md-7">
+                                <h5 class="fw-semibold">Thông Tin Chi Tiết</h5>
+                                <p><strong>Giá:</strong> <span class="text-danger fw-bold">@Model.Price.ToString("N0") VNĐ</span></p>
+                                <p><strong>Danh Mục:</strong> @(Model.Category?.Name ?? "Không có")</p>
+                                <p><strong>Số Lượng Tồn:</strong> <span class="fw-semibold">@Model.StockQuantity</span></p>
+                                <hr />
+                                <h6 class="fw-semibold">Mô Tả:</h6>
+                                <div class="text-secondary">@Html.Raw(Model.Description)</div>
+
+                                <!-- Nút tương tác -->
+                                <div class="mt-4 d-flex gap-2 flex-wrap">
+                                    <a asp-action="IndexList" class="btn btn-outline-secondary">
+                                        <i class="bi bi-arrow-left me-2"></i>Trở Lại
+                                    </a>
+
+                                    <button type="button" class="btn btn-success" onclick="addToCart(@Model.Id, 1)">
+                                        <i class="bi bi-cart-plus me-2"></i>Thêm Vào Giỏ
+                                    </button>
+
+                                    <form asp-controller="ShoppingCart" asp-action="BuyNow" method="post" style="display:inline;">
+                                        <input type="hidden" name="productId" value="@Model.Id" />
+                                        <input type="hidden" name="quantity" value="1" />
+                                        <button type="submit" class="btn btn-dark">
+                                            Mua ngay
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        }
+        </div>
     </div>
-}
-else
-{
-    <p>Chưa có hình ảnh phụ cho sản phẩm này!</p>
+</section>
+
+@section Scripts {
+    <script>
+        const isAuthenticated = @User.Identity.IsAuthenticated.ToString().ToLower();
+
+        function addToCart(productId, quantity = 1) {
+            if (!isAuthenticated) {
+                window.location.href = "/Identity/Account/Login?returnUrl=" + encodeURIComponent(window.location.pathname);
+                return;
+            }
+
+            fetch('/ShoppingCart/AddToCart', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `productId=${productId}&quantity=${quantity}`
+            })
+            .then(async (response) => {
+                if (response.redirected) {
+                    window.location.href = response.url;
+                    return;
+                }
+
+                let data;
+                try {
+                    data = await response.json();
+                } catch (e) {
+                    showToast("❌ Lỗi server hoặc phản hồi không đúng định dạng JSON!", 'error');
+                    return;
+                }
+
+                showToast(
+                    data.success ? `✅ ${data.message || 'Đã thêm vào giỏ hàng!'}` : `❌ ${data.message || 'Lỗi khi thêm vào giỏ hàng!'}`,
+                    data.success ? 'success' : 'error'
+                );
+
+                updateCartCount();
+            })
+            .catch(() => showToast("❌ Lỗi kết nối tới server", 'error'));
+        }
+
+        function updateCartCount() {
+            fetch('/ShoppingCart/GetCartCount')
+                .then(res => res.json())
+                .then(data => {
+                    const count = data.count || 0;
+                    const badge = document.getElementById("cartCount");
+                    if (badge) {
+                        badge.textContent = count;
+                        badge.style.display = count > 0 ? 'inline-block' : 'none';
+                        badge.classList.remove('cart-animate');
+                        void badge.offsetWidth;
+                        if (count > 0) badge.classList.add('cart-animate');
+                    }
+                });
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.createElement("div");
+            toast.className = `toast-notification ${type}`;
+            toast.innerHTML = `
+                <div class="toast-message">${message}</div>
+                <button class="toast-close" onclick="this.parentElement.classList.remove('show'); setTimeout(() => this.parentElement.remove(), 300);">&times;</button>
+            `;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        document.addEventListener("DOMContentLoaded", updateCartCount);
+    </script>
 }

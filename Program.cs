@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Repositories;

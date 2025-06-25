@@ -95,4 +95,15 @@ public class CategoriesController : Controller
         }
         return RedirectToAction(nameof(Index));
     }
+
+    [HttpGet]
+    public async Task<IActionResult> CheckName(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return Json(new { exists = false });
+
+        var categories = await _categoryRepository.GetAllAsync();
+        bool exists = categories.Any(c => c.Name.Trim().ToLower() == name.Trim().ToLower());
+        return Json(new { exists });
+    }
 }

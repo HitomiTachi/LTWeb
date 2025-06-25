@@ -1,4 +1,7 @@
-﻿﻿@* _Layout.cshtml *@
+﻿@*
+    _Layout.cshtml
+    Layout dùng chung cho toàn site
+*@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -15,41 +18,33 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- Announcement Bar -->
-    <div class="announcement__bar">
-        <div class="marquee">
-            <span>
-                🎂 Miễn phí giao hàng toàn TP.HCM với đơn từ 300.000đ 🎉 &nbsp; 🍰 Giảm 10% cho khách đặt online! &nbsp; ☕ Nhận bánh theo yêu cầu!
-            </span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="site-header">
-        <nav class="navbar navbar-expand-lg shadow-sm custom-navbar">
+    <!-- Header/Navbar (đã thêm sticky-top) -->
+    <header class="site-header shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-lg">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                    <i class="bi bi-cupcake me-1 text-danger"></i> TNShop
+                <a class="navbar-brand fw-bold text-danger" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-cupcake me-1"></i> TNShop
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        @{
+                            string currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+                        }
                         <li class="nav-item">
-                            @{
-                                string currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
-                            }
                             <a class="nav-link @(currentAction == "IndexList" ? "active" : "")"
                                asp-controller="Home" asp-action="IndexList">Sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(currentAction == "About" ? "active" : "")"
-                               asp-controller="Order" asp-action="History">Lich su mua hang</a>
+                            <a class="nav-link @(currentAction == "History" ? "active" : "")"
+                               asp-controller="Order" asp-action="History">Lịch sử mua hàng</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @(currentAction == "About" ? "active" : "")"
@@ -63,7 +58,7 @@
                     <div class="d-flex align-items-center">
                         <a href="/ShoppingCart" class="btn btn-outline-secondary position-relative me-3 cart-btn" title="Giỏ hàng">
                             <i class="bi bi-cart2 fs-5"></i>
-                            <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                            <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">0</span>
                         </a>
                         <partial name="_LoginPartial" />
                     </div>
@@ -73,14 +68,14 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content flex-grow-1">
-        <div class="container-xl py-4">
+    <main class="main-content flex-grow-1 py-4 bg-light">
+        <div class="container-xl">
             @RenderBody()
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer py-4 mt-auto">
+    <footer class="site-footer py-4 mt-auto bg-white border-top">
         <div class="container text-center">
             &copy; @DateTime.Now.Year <strong>TNShop</strong> — Làm bằng <i class="bi bi-heart-fill text-danger"></i> và đường
         </div>
@@ -89,7 +84,6 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         // Cập nhật số lượng giỏ hàng
         document.addEventListener("DOMContentLoaded", function () {
@@ -107,7 +101,7 @@
                         badge.style.display = count > 0 ? "inline-block" : "none";
                         if (count > 0) {
                             badge.classList.remove('cart-animate');
-                            void badge.offsetWidth; // reflow
+                            void badge.offsetWidth;
                             badge.classList.add('cart-animate');
                         }
                     }
@@ -115,7 +109,6 @@
                 .catch(err => console.error("Lỗi cập nhật giỏ hàng:", err));
         }
     </script>
-
     @RenderSection("Scripts", required: false)
 </body>
 </html>

@@ -1,107 +1,151 @@
 ﻿@model NguyenNhan_2179_tuan3.Models.Product
+@using Microsoft.AspNetCore.Mvc.Rendering
 
 @{
-    ViewData["Title"] = "Cập nhật sản phẩm";
+    ViewData["Title"] = "Cập Nhật Sản Phẩm";
 }
 
-<h2>Cập nhật sản phẩm</h2>
-
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-}
-
-<form asp-action="Update" enctype="multipart/form-data" method="post">
-    <input type="hidden" asp-for="Id" />
-
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Description"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
-        <span asp-validation-for="Description" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Price"></label>
-        <input asp-for="Price" class="form-control" />
-        <span asp-validation-for="Price" class="text-danger"></span>
-    </div>
-
-    <!-- THÊM TRƯỜNG SỐ LƯỢNG TỒN KHO Ở ĐÂY -->
-    <div class="form-group">
-        <label asp-for="StockQuantity"></label>
-        <input asp-for="StockQuantity" class="form-control" type="number" min="0" />
-        <span asp-validation-for="StockQuantity" class="text-danger"></span>
-    </div>
-    <!-- HẾT THÊM -->
-
-    <div class="form-group">
-        <label asp-for="CategoryId"></label>
-        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control"></select>
-        <span asp-validation-for="CategoryId" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label>Ảnh hiện tại:</label><br />
-        @if (!string.IsNullOrEmpty(Model.ImageUrl))
-        {
-            <img src="@Model.ImageUrl" class="img-thumbnail" style="max-height: 150px;" />
-        }
-        else
-        {
-            <span>Chưa có ảnh</span>
-        }
-    </div>
-
-    <div class="form-group">
-        <label for="imageFile">Chọn ảnh mới (nếu muốn thay ảnh hiện tại):</label>
-        <input type="file" name="imageFile" class="form-control" accept="image/*" />
-        <span asp-validation-for="ImageUrl" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mt-4">
-        <label>Ảnh phụ hiện có:</label>
-        @if (Model.Images != null && Model.Images.Any())
-        {
-            <div class="d-flex flex-wrap" style="gap:12px;">
-                @foreach (var img in Model.Images)
-                {
-                    <div class="position-relative" style="display:inline-block;">
-                        <img src="@img.Url" class="img-thumbnail" style="width:90px; height:90px; object-fit:cover;" />
-                        <!-- Xóa ảnh phụ (option, cần controller xử lý) -->
-                        <button type="button" class="btn btn-danger btn-sm position-absolute top-0 end-0 remove-sub-image"
-                                data-img-id="@img.Id" title="Xóa ảnh phụ" style="transform:translate(30%,-30%);">
-                            &times;
-                        </button>
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-warning text-white">
+                        <h4 class="mb-0"><i class="bi bi-pencil me-2"></i>Cập Nhật Sản Phẩm</h4>
                     </div>
-                }
+                    <div class="card-body p-4">
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                @TempData["SuccessMessage"]
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+
+                        <form asp-action="Update" method="post" enctype="multipart/form-data">
+                            <input type="hidden" asp-for="Id" />
+
+                            <div class="mb-3">
+                                <label asp-for="Name" class="form-label fw-semibold">Tên Sản Phẩm</label>
+                                <input asp-for="Name" class="form-control" placeholder="Nhập tên sản phẩm" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Price" class="form-label fw-semibold">Giá (VNĐ)</label>
+                                <input asp-for="Price" class="form-control" type="number" min="0" placeholder="Nhập giá sản phẩm" />
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Description" class="form-label fw-semibold">Mô Tả</label>
+                                <textarea asp-for="Description" class="form-control" rows="5" placeholder="Nhập mô tả sản phẩm"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="StockQuantity" class="form-label fw-semibold">Số Lượng Tồn</label>
+                                <input asp-for="StockQuantity" class="form-control" type="number" min="0" placeholder="Nhập số lượng tồn kho" />
+                                <span asp-validation-for="StockQuantity" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="CategoryId" class="form-label fw-semibold">Danh Mục</label>
+                                <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-select">
+                                    <option value="">-- Chọn danh mục --</option>
+                                </select>
+                                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Hình Ảnh Đại Diện Hiện Tại</label>
+                                <div class="mb-2">
+                                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                                    {
+                                        <img src="@Model.ImageUrl" alt="Ảnh hiện tại" style="max-width:150px; max-height:150px;" class="rounded border" />
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted fst-italic">Chưa có ảnh</span>
+                                    }
+                                </div>
+                                <label class="form-label fw-semibold">Chọn Ảnh Mới (Nếu Muốn Thay)</label>
+                                <input type="file" name="imageFile" class="form-control" accept="image/*" />
+                                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                                <div id="previewImage" class="mt-2">
+                                    <img src="/images/default-product.png" alt="Ảnh xem trước" style="max-width:150px; max-height:150px; display:none;" class="rounded border" />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Ảnh Phụ Hiện Có</label>
+                                @if (Model.Images != null && Model.Images.Any())
+                                {
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        @foreach (var img in Model.Images)
+                                        {
+                                            <div class="position-relative">
+                                                <img src="@img.Url" alt="Ảnh phụ" style="width:90px; height:90px; object-fit:cover;" class="rounded border" />
+                                                <button type="button" class="btn btn-danger btn-sm position-absolute top-0 end-0 remove-sub-image"
+                                                        data-img-id="@img.Id" title="Xóa ảnh phụ" style="transform:translate(30%,-30%);">
+                                                    <i class="bi bi-x"></i>
+                                                </button>
+                                            </div>
+                                        }
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="text-muted fst-italic mb-2">Không có ảnh phụ</div>
+                                }
+                                <label class="form-label fw-semibold">Thêm Ảnh Phụ Mới (Chọn Nhiều)</label>
+                                <input type="file" name="Images" class="form-control" accept="image/*" multiple />
+                                <div id="previewMultiImages" class="mt-2 d-flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-4">
+                                <button type="submit" class="btn btn-warning px-4"><i class="bi bi-pencil me-2"></i>Cập Nhật</button>
+                                <a asp-action="IndexList" class="btn btn-outline-secondary px-4"><i class="bi bi-arrow-left me-2"></i>Quay Lại</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        }
-        else
-        {
-            <div>Không có ảnh phụ.</div>
-        }
+        </div>
     </div>
-
-    <div class="form-group mt-2">
-        <label for="Images">Thêm ảnh phụ mới (có thể chọn nhiều):</label>
-        <input type="file" name="Images" class="form-control" accept="image/*" multiple />
-        <div id="previewMultiImages" class="mt-2 d-flex flex-wrap" style="gap:8px;"></div>
-    </div>
-
-    <button type="submit" class="btn btn-primary mt-3">Cập nhật</button>
-    <a asp-action="IndexList" class="btn btn-secondary mt-3">Hủy</a>
-</form>
+</section>
 
 @section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+    <partial name="_ValidationScriptsPartial" />
 
-    <!-- Xem trước nhiều ảnh phụ mới -->
+    <!-- CKEditor for Description -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('textarea[name="Description"]'))
+            .catch(error => console.error(error));
+    </script>
+
+    <!-- Preview Main Image -->
+    <script>
+        const imageInput = document.querySelector('input[name="imageFile"]');
+        const previewImage = document.querySelector('#previewImage img');
+        imageInput.addEventListener('change', function () {
+            const file = this.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                    previewImage.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                previewImage.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- Preview Multiple Sub-Images -->
     <script>
         const multiImageInput = document.querySelector('input[name="Images"]');
         const previewMultiImages = document.getElementById('previewMultiImages');
@@ -119,24 +163,27 @@
                             img.style.objectFit = "cover";
                             img.classList.add("border", "rounded");
                             previewMultiImages.appendChild(img);
-                        }
+                        };
                         reader.readAsDataURL(file);
                     }
                 });
             });
         }
 
-        // Xóa ảnh phụ (cần controller nhận AJAX xóa ảnh)
+        // Remove Sub-Image via AJAX
         document.querySelectorAll('.remove-sub-image').forEach(btn => {
             btn.addEventListener('click', function () {
                 const imgId = this.getAttribute('data-img-id');
                 if (confirm('Bạn có chắc chắn muốn xóa ảnh phụ này?')) {
-                    fetch('@Url.Action("RemoveSubImage", "Product", new { area = "Admin" })' + '?imgId=' + imgId, {
+                    fetch('@Url.Action("RemoveSubImage", "Product", new { area = "Admin" })?imgId=' + imgId, {
                         method: 'POST',
                         headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() }
                     }).then(response => {
-                        if (response.ok) location.reload();
-                        else alert('Không thể xóa ảnh phụ!');
+                        if (response.ok) {
+                            location.reload();
+                        } else {
+                            alert('Không thể xóa ảnh phụ!');
+                        }
                     });
                 }
             });

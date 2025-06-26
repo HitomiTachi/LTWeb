@@ -6,6 +6,7 @@ using NguyenNhan_2179_tuan3.Repositories;
 using NguyenNhan_2179_tuan3.Services;
 using System.Security.Claims;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NguyenNhan_2179_tuan3.Controllers
 {
@@ -111,6 +112,12 @@ namespace NguyenNhan_2179_tuan3.Controllers
 
         public IActionResult Checkout()
         {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
+            if (cart == null || !cart.Items.Any())
+            {
+                TempData["Error"] = "Giỏ hàng trống!";
+                return RedirectToAction("Index");
+            }
             return View(new Order());
         }
 
@@ -182,6 +189,7 @@ namespace NguyenNhan_2179_tuan3.Controllers
                 }
             }
 
+            // Xử lý thanh toán
             if (order.PaymentMethod == "VnPay")
             {
                 var paymentInfo = new PaymentInformationModel
@@ -194,12 +202,13 @@ namespace NguyenNhan_2179_tuan3.Controllers
                 HttpContext.Session.SetString("OrderPending", Newtonsoft.Json.JsonConvert.SerializeObject(order));
                 return RedirectToAction("CreatePaymentUrlVnpay", "Payment", paymentInfo);
             }
-
-            _context.Orders.Add(order);
-            await _context.SaveChangesAsync();
-            HttpContext.Session.Remove(GetCartKey());
-
-            return View("OrderCompleted", order.Id);
+            else // Tiền mặt, chuyển khoản, v.v.
+            {
+                _context.Orders.Add(order);
+                await _context.SaveChangesAsync();
+                HttpContext.Session.Remove(GetCartKey());
+                return View("OrderCompleted", order.Id);
+            }
         }
 
         [HttpPost]

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Sản phẩm bán chạy";
+}
+
+<h2>Top sản phẩm bán chạy</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng bán</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int stt = 1;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@stt</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.TotalSold</td>
+                </tr>
+                stt++;
+            }
+        }
+    </tbody>
+</table>

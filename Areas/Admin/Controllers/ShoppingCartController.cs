@@ -5,6 +5,8 @@ using NguyenNhan_2179_tuan3.Extensions;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Services;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
 {
@@ -13,16 +15,16 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
-        private readonly IVnPayService _vnPayService; // Thêm dòng này
+        private readonly IVnPayService _vnPayService;
 
         public ShoppingCartController(
             UserManager<ApplicationUser> userManager,
             ApplicationDbContext context,
-            IVnPayService vnPayService) // Thêm vào constructor
+            IVnPayService vnPayService)
         {
             _userManager = userManager;
             _context = context;
-            _vnPayService = vnPayService; // Gán giá trị
+            _vnPayService = vnPayService;
         }
 
         // Helper để lấy key giỏ hàng phù hợp user
@@ -111,18 +113,36 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Kiểm tra hợp lệ model
-            if (!ModelState.IsValid)
-            {
-                // Trả lại view với lỗi, không chuyển trang
-                return View(order);
-            }
-
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
                 TempData["Error"] = "Bạn chưa đăng nhập!";
                 return RedirectToAction("Index");
+            }
+
+            // Gán các trường bắt buộc cho order trước khi kiểm tra ModelState
+            order.UserId = user.Id;
+            order.OrderDate = DateTime.UtcNow;
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            order.Status = "Chờ xác nhận";
+            order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            {
+                ProductId = i.ProductId,
+                Quantity = i.Quantity,
+                Price = i.Price
+            }).ToList();
+
+            // Xóa lỗi cho các trường được gán động khỏi ModelState (fix lỗi validate bắt buộc)
+            ModelState.Remove(nameof(order.Status));
+            ModelState.Remove(nameof(order.UserId));
+            ModelState.Remove(nameof(order.OrderDetails));
+
+            // Kiểm tra hợp lệ model
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                TempData["Error"] = "Dữ liệu không hợp lệ: " + string.Join("; ", errors);
+                return View(order);
             }
 
             // Kiểm tra tồn kho trước khi đặt
@@ -149,17 +169,6 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 _context.Products.Update(product);
             }
 
-            order.UserId = user.Id;
-            order.OrderDate = DateTime.UtcNow;
-            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
-            order.OrderDetails = cart.Items.Select(i => new OrderDetail
-            {
-                ProductId = i.ProductId,
-                Quantity = i.Quantity,
-                Price = i.Price
-            }).ToList();
-            order.Status = "Chờ xác nhận";
-
             // Xử lý phương thức thanh toán
             if (order.PaymentMethod == "VnPay")
             {
@@ -171,14 +180,22 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                     Name = user.UserName
                 };
                 TempData["Order"] = Newtonsoft.Json.JsonConvert.SerializeObject(order);
-                return RedirectToAction("CreatePaymentUrlVnpay", "Payment", new { area = "", Amount = paymentInfo.Amount, OrderDescription = paymentInfo.OrderDescription, OrderType = paymentInfo.OrderType, Name = paymentInfo.Name });
+                return RedirectToAction("CreatePaymentUrlVnpay", "Payment", new
+                {
+                    area = "",
+                    Amount = paymentInfo.Amount,
+                    OrderDescription = paymentInfo.OrderDescription,
+                    OrderType = paymentInfo.OrderType,
+                    Name = paymentInfo.Name
+                });
             }
-
-            _context.Orders.Add(order);
-            await _context.SaveChangesAsync();
-            HttpContext.Session.Remove(GetCartKey());
-
-            return View("OrderCompleted", order.Id);
+            else // Xử lý thanh toán tiền mặt hoặc các phương thức khác
+            {
+                _context.Orders.Add(order);
+                await _context.SaveChangesAsync();
+                HttpContext.Session.Remove(GetCartKey());
+                return View("OrderCompleted", order.Id);
+            }
         }
 
         // POST: /Admin/ShoppingCart/CancelOrder

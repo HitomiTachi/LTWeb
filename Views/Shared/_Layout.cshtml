@@ -27,7 +27,7 @@
     <header class="site-header shadow-sm sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-lg">
-                <a class="navbar-brand fw-bold text-danger" asp-controller="Home" asp-action="Index">
+                <a class="navbar-brand fw-bold text-danger" asp-area="" asp-controller="Home" asp-action="Index">
                     <i class="bi bi-cupcake me-1"></i> TNShop
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -40,15 +40,15 @@
                         }
                         <li class="nav-item">
                             <a class="nav-link @(currentAction == "IndexList" ? "active" : "")"
-                               asp-controller="Home" asp-action="IndexList">Sản phẩm</a>
+                               asp-area="" asp-controller="Home" asp-action="IndexList">Sản phẩm</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @(currentAction == "About" ? "active" : "")"
-                               asp-controller="Home" asp-action="About">Giới thiệu</a>
+                               asp-area="" asp-controller="Home" asp-action="About">Giới thiệu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @(currentAction == "Contact" ? "active" : "")"
-                               asp-controller="Home" asp-action="Contact">Liên hệ</a>
+                               asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">

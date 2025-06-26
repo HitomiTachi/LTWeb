@@ -1,21 +1,27 @@
 ﻿@model NguyenNhan_2179_tuan3.Models.Order
 
 @{
-    ViewData["Title"] = "Thanh toán đơn hàng";
+    ViewData["Title"] = "Checkout";
 }
 
 <h2>@ViewData["Title"]</h2>
+
+<!-- Hiển thị lỗi từ TempData nếu có -->
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
 
 <form asp-action="Checkout" method="post" id="checkoutForm">
     <div id="step1">
         <div class="form-group mb-3">
             <label asp-for="ShippingAddress" class="form-label">Địa chỉ giao hàng</label>
-            <input asp-for="ShippingAddress" class="form-control" />
+            <input asp-for="ShippingAddress" class="form-control" id="ShippingAddress" />
             <span asp-validation-for="ShippingAddress" class="text-danger"></span>
         </div>
         <div class="form-group mb-3">
             <label asp-for="Notes" class="form-label">Ghi chú</label>
-            <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+            <textarea asp-for="Notes" class="form-control" rows="4" id="Notes"></textarea>
             <span asp-validation-for="Notes" class="text-danger"></span>
         </div>
         <button type="button" class="btn btn-primary" id="btnNext">Tiếp tục chọn phương thức thanh toán</button>
@@ -44,7 +50,9 @@
 </form>
 
 @section Scripts {
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
     <script>
         // Bước 1: Nhập thông tin, nhấn tiếp tục để sang bước 2
         document.getElementById('btnNext').addEventListener('click', function () {
@@ -56,6 +64,8 @@
             } else {
                 shippingAddress.classList.remove('is-invalid');
             }
+            // Có thể kiểm tra thêm các trường khác nếu cần
+
             if (valid) {
                 document.getElementById('step1').style.display = 'none';
                 document.getElementById('step2').style.display = '';
@@ -79,7 +89,7 @@
             // Xử lý riêng cho từng phương thức nếu muốn
             if (paymentMethod.value === 'VnPay') {
                 e.preventDefault();
-                fetch('@Url.Action("GetVnPayUrl", "ShoppingCart", new { area = "Admin" })', {
+                fetch('@Url.Action("GetVnPayUrl", "ShoppingCart")', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -92,7 +102,12 @@
                 .then(data => {
                     if (data.url) {
                         window.location.href = data.url;
+                    } else {
+                        alert(data.error || "Không lấy được link thanh toán. Vui lòng thử lại!");
                     }
+                })
+                .catch(() => {
+                    alert("Có lỗi khi kết nối đến cổng thanh toán. Vui lòng thử lại!");
                 });
             }
             // Nếu muốn tích hợp MoMo, xử lý tương tự ở đây

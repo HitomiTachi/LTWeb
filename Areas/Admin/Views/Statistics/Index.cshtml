@@ -1,0 +1,327 @@
+﻿@{
+    ViewData["Title"] = "Dashboard Thống kê";
+    var bestSellers = ViewBag.BestSellers as IEnumerable<dynamic>;
+    var lowStockList = ViewBag.LowStockList as IEnumerable<NguyenNhan_2179_tuan3.Models.Product>;
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    body {
+        background: #f7f8fa;
+    }
+
+    .stat-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 2px 12px rgba(60,60,60,0.07);
+        padding: 1.5rem 1.2rem;
+        margin-bottom: 2rem;
+        transition: 0.3s;
+        border: none;
+    }
+
+        .stat-card .stat-icon {
+            font-size: 2.3rem;
+            margin-right: 1rem;
+            opacity: .75;
+        }
+
+    .stat-title {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #7b7c81;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .bg-soft-blue {
+        background: #e3eafe !important;
+        color: #2371c6;
+    }
+
+    .bg-soft-green {
+        background: #e5f7ef !important;
+        color: #1fa37c;
+    }
+
+    .bg-soft-yellow {
+        background: #fffbe6 !important;
+        color: #dfb900;
+    }
+
+    .bg-soft-pink {
+        background: #ffe8ef !important;
+        color: #e75b92;
+    }
+
+    .bg-soft-orange {
+        background: #fff0e0 !important;
+        color: #ff8c1a;
+    }
+
+    .table th, .table td {
+        vertical-align: middle !important;
+    }
+
+    .table thead {
+        background: #f0f4fa;
+    }
+
+    .section-title {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .chart-container {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(60,60,60,0.07);
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<h2 class="mb-4"><i class="fa-solid fa-chart-line"></i> Dashboard Thống kê</h2>
+
+<!-- Form chọn khoảng thời gian -->
+<form method="get" class="mb-4 row g-2">
+    <div class="col-auto">
+        <label class="form-label">Từ ngày:</label>
+        <input type="date" name="fromDate" class="form-control" value="@ViewBag.FromDate" />
+    </div>
+    <div class="col-auto">
+        <label class="form-label">Đến ngày:</label>
+        <input type="date" name="toDate" class="form-control" value="@ViewBag.ToDate" />
+    </div>
+    <div class="col-auto align-self-end">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-filter"></i> Xem doanh thu</button>
+    </div>
+</form>
+
+@if (ViewBag.FilteredRevenue != null)
+{
+    <div class="alert alert-info mb-4">
+        <b>Doanh thu từ ngày @ViewBag.FromDate đến @ViewBag.ToDate:</b>
+        <span class="fs-5 text-success">@String.Format("{0:N0}", ViewBag.FilteredRevenue)₫</span>
+    </div>
+}
+
+<div class="row mb-4">
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-blue d-flex align-items-center">
+            <i class="fa-solid fa-file-invoice-dollar stat-icon"></i>
+            <div>
+                <div class="stat-title">Tổng đơn hàng</div>
+                <div class="stat-value">@ViewBag.TotalOrders</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-green d-flex align-items-center">
+            <i class="fa-solid fa-money-bill-wave stat-icon"></i>
+            <div>
+                <div class="stat-title">Doanh thu tháng</div>
+                <div class="stat-value">@String.Format("{0:N0}", ViewBag.MonthRevenue)₫</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-yellow d-flex align-items-center">
+            <i class="fa-solid fa-users stat-icon"></i>
+            <div>
+                <div class="stat-title">Khách hàng</div>
+                <div class="stat-value">@ViewBag.TotalUsers</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-pink d-flex align-items-center">
+            <i class="fa-solid fa-exclamation-triangle stat-icon"></i>
+            <div>
+                <div class="stat-title">Sản phẩm sắp hết hàng</div>
+                <div class="stat-value">@ViewBag.LowStockProducts</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-orange d-flex align-items-center">
+            <i class="fa-solid fa-calendar-day stat-icon"></i>
+            <div>
+                <div class="stat-title">Đơn hôm nay</div>
+                <div class="stat-value">@ViewBag.OrdersToday</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-blue d-flex align-items-center">
+            <i class="fa-solid fa-calendar-week stat-icon"></i>
+            <div>
+                <div class="stat-title">Đơn tháng này</div>
+                <div class="stat-value">@ViewBag.OrdersThisMonth</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-green d-flex align-items-center">
+            <i class="fa-solid fa-user-plus stat-icon"></i>
+            <div>
+                <div class="stat-title">Khách mới tháng</div>
+                <div class="stat-value">@ViewBag.NewUsersThisMonth</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="stat-card bg-soft-pink d-flex align-items-center">
+            <i class="fa-solid fa-undo stat-icon"></i>
+            <div>
+                <div class="stat-title">Đơn hoàn tiền</div>
+                <div class="stat-value">@ViewBag.RefundedOrders</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="chart-container">
+            <div class="section-title"><i class="fa-solid fa-chart-bar"></i> Doanh thu theo ngày (theo filter)</div>
+            <canvas id="revenueBarChart" height="100"></canvas>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="chart-container">
+            <div class="section-title"><i class="fa-solid fa-chart-pie"></i> Tỷ lệ đơn theo phương thức thanh toán</div>
+            <canvas id="paymentPieChart" height="100"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="section-title"><i class="fa-solid fa-fire"></i> Top 5 sản phẩm bán chạy (theo filter)</div>
+<div class="table-responsive">
+    <table class="table table-hover table-striped align-middle">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng bán</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int stt = 1;
+                if (bestSellers != null)
+                {
+                    foreach (var item in bestSellers)
+                    {
+                        <tr>
+                            <td>@stt</td>
+                            <td>@item.ProductName</td>
+                            <td><span class="badge bg-success">@item.TotalSold</span></td>
+                        </tr>
+                        stt++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" class="text-center text-muted">Chưa có dữ liệu</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="section-title"><i class="fa-solid fa-box-open"></i> Sản phẩm tồn kho thấp (&le;5)</div>
+<div class="table-responsive">
+    <table class="table table-hover table-bordered align-middle">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Tồn kho</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (lowStockList != null && lowStockList.Any())
+            {
+                foreach (var item in lowStockList)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">@item.StockQuantity</span>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2" class="text-center text-muted">Không có sản phẩm nào tồn kho thấp.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Doanh thu theo ngày trong khoảng filter
+    const revenueData = @Html.Raw(ViewBag.RevenueByDayJson ?? "[]");
+    const days = revenueData.map(e => e.Day);
+    const revenues = revenueData.map(e => e.Revenue);
+
+    const barChart = document.getElementById('revenueBarChart').getContext('2d');
+    new Chart(barChart, {
+        type: 'bar',
+        data: {
+            labels: days,
+            datasets: [{
+                label: 'Doanh thu (VNĐ)',
+                data: revenues,
+                backgroundColor: '#4e73df',
+                borderRadius: 8,
+                maxBarThickness: 24
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: { beginAtZero: true, ticks: { callback: value => value.toLocaleString() + "₫" } }
+            }
+        }
+    });
+
+    // Pie chart: Tỷ lệ đơn theo phương thức thanh toán
+    const paymentLabels = @Html.Raw(ViewBag.PaymentLabelsJson ?? "[]");
+    const paymentCounts = @Html.Raw(ViewBag.PaymentCountsJson ?? "[]");
+    const pieColors = ['#1fa37c', '#4e73df', '#e75b92', '#ff8c1a', '#dfb900'];
+
+    const pieChart = document.getElementById('paymentPieChart').getContext('2d');
+    new Chart(pieChart, {
+        type: 'pie',
+        data: {
+            labels: paymentLabels,
+            datasets: [{
+                data: paymentCounts,
+                backgroundColor: pieColors,
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+</script>

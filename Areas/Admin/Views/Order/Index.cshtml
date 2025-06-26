@@ -1,56 +1,56 @@
-﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Order>
+﻿@model IEnumerable<NguyenNhan_2179_tuan3.Models.Order>  
 
-@{
-    ViewData["Title"] = "Quản lý đơn hàng";
-}
+@{  
+    ViewData["Title"] = "Quản lý đơn hàng";  
+}  
 
-@if (TempData["Message"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["Message"]
-    </div>
-}
+@if (TempData["Message"] != null)  
+{  
+    <div class="alert alert-success">  
+        @TempData["Message"]  
+    </div>  
+}  
 
-<h2>@ViewData["Title"]</h2>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Mã đơn</th>
-            <th>Khách hàng</th>
-            <th>Ngày đặt</th>
-            <th>Tổng tiền</th>
-            <th>Trạng thái</th>
-            <th>Thao tác</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.ApplicationUser?.UserName</td>
-                <td>@item.OrderDate.ToString("dd/MM/yyyy")</td>
-                <td>@item.TotalPrice.ToString("N0")</td>
-                <td>@item.Status</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Chi tiết</a>
-                    @if (item.Status == "Chờ xác nhận")
-                    {
-                        <form asp-action="Confirm" asp-route-id="@item.Id" method="post" style="display:inline">
-                            <button type="submit" class="btn btn-success btn-sm">Xác nhận</button>
-                        </form>
-                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display:inline" onsubmit="return confirm('Bạn có chắc chắn muốn hủy đơn này không?');">
-                            <button type="submit" class="btn btn-danger btn-sm">huy don hang</button>
-                        </form>
-                    }
-                    else
-                    {
-                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display:inline" onsubmit="return confirm('Bạn có chắc chắn muốn xóa đơn này không?');">
-                            <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
-                        </form>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
+<h2>@ViewData["Title"]</h2>  
+<table class="table table-bordered">  
+    <thead>  
+        <tr>  
+            <th>Mã đơn</th>  
+            <th>Khách hàng</th>  
+            <th>Ngày đặt</th>  
+            <th>Tổng tiền</th>  
+            <th>Trạng thái</th>  
+            <th>Thao tác</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        @foreach (var item in Model)  
+        {  
+            <tr>  
+                <td>@item.Id</td>  
+                <td>@item.ApplicationUser?.UserName</td>  
+                <td>@item.OrderDate.ToString("dd/MM/yyyy")</td>  
+                <td>@item.TotalPrice.ToString("N0")</td>  
+                <td>@item.Status</td>  
+                <td>  
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Chi tiết</a>  
+                    @if (item.Status == "Chờ xác nhận")  
+                    {  
+                        <form asp-action="Confirm" asp-route-id="@item.Id" method="post" style="display:inline">  
+                            <button type="submit" class="btn btn-success btn-sm">Xác nhận</button>  
+                        </form>  
+                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display:inline" onsubmit="return confirm('Bạn có chắc chắn muốn hủy đơn này không?');">  
+                            <button type="submit" class="btn btn-danger btn-sm">huy don hang</button>  
+                        </form>  
+                    }  
+                    else  
+                    {  
+                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display:inline" onsubmit="return confirm('Bạn có chắc chắn muốn xóa đơn này không?');">  
+                            <button type="submit" class="btn btn-danger btn-sm">Xóa</button>  
+                        </form>  
+                    }  
+                </td>  
+            </tr>  
+        }  
+    </tbody>  
 </table>

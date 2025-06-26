@@ -4,14 +4,13 @@
     "\\Areas",
     "\\Areas\\Admin",
     "\\Areas\\Admin\\Views",
-    "\\Areas\\Admin\\Views\\ShoppingCart",
-    "\\Controllers",
+    "\\Areas\\Admin\\Views\\Order",
     "\\Models",
     "\\Services",
     "\\Views",
     "\\Views\\Home",
     "\\Views\\ShoppingCart"
   ],
-  "SelectedNode": "\\Controllers\\PaymentController.cs",
+  "SelectedNode": "\\Areas\\Admin\\Views\\Order\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

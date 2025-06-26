@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "C:\\GitHub\\LTWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\statistics\\bestsellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\statistics\\bestsellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -31,14 +75,6 @@
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -51,24 +87,12 @@
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -81,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -310,7 +330,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 828,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -346,29 +366,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VnPayLibrary.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Libraries\\VnPayLibrary.cs",
-              "RelativeDocumentMoniker": "Libraries\\VnPayLibrary.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Libraries\\VnPayLibrary.cs",
-              "RelativeToolTip": "Libraries\\VnPayLibrary.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAQwMUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T08:12:48.21Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T11:07:35.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAwJEAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAkwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T07:14:00.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T02:33:18.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T01:46:26.691Z"
             },
             {
               "$type": "Document",
@@ -378,25 +409,100 @@
               "RelativeDocumentMoniker": "Controllers\\ShoppingCartController.cs",
               "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\ShoppingCartController.cs",
               "RelativeToolTip": "Controllers\\ShoppingCartController.cs",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAYwB0BAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAowCYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T02:02:54.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Services\\VnPayService.cs",
-              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Services\\VnPayService.cs",
-              "RelativeToolTip": "Services\\VnPayService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAowIQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:54:53.168Z"
+              "WhenOpened": "2025-06-26T10:17:01.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Statistics\\Index.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Statistics\\Index.cshtml",
+              "ViewState": "AgIAACcBAAAAAAAAAAAkwEYBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T10:19:05.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAswHYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T01:39:08.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\GitHub\\LTWeb\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T09:02:22.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T01:41:45.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BestSellers.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T10:57:37.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "RelativeDocumentMoniker": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "ToolTip": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "RelativeToolTip": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-20T09:00:12.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -408,33 +514,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "RelativeDocumentMoniker": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "ToolTip": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "RelativeToolTip": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-20T09:00:12.226Z",
-              "EditorCaption": ""
+              "DocumentIndex": 8,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAkwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T10:31:28.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\GitHub\\LTWeb\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-20T09:02:22.248Z",
-              "EditorCaption": ""
+              "DocumentIndex": 17,
+              "Title": "VnPayService.cs",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Services\\VnPayService.cs",
+              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Services\\VnPayService.cs",
+              "RelativeToolTip": "Services\\VnPayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T07:54:53.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAwJEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T02:33:18.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAkwG0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T01:38:42.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VnPayLibrary.cs",
+              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Libraries\\VnPayLibrary.cs",
+              "RelativeDocumentMoniker": "Libraries\\VnPayLibrary.cs",
+              "ToolTip": "C:\\GitHub\\LTWeb\\Libraries\\VnPayLibrary.cs",
+              "RelativeToolTip": "Libraries\\VnPayLibrary.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAQwMUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:12:48.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
@@ -442,12 +582,11 @@
               "RelativeToolTip": "Controllers\\PaymentController.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAkwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:45:00.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T07:45:00.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "SD.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\SD.cs",
               "RelativeDocumentMoniker": "Models\\SD.cs",
@@ -459,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
@@ -471,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "site.css",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -483,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "ServicesEmailSender.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Services\\ServicesEmailSender.cs",
               "RelativeDocumentMoniker": "Services\\ServicesEmailSender.cs",
@@ -495,19 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "Views\\ShoppingCart\\Checkout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
-              "RelativeToolTip": "Views\\ShoppingCart\\Checkout.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAcwFsAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T07:14:00.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -519,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
@@ -531,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Repositories\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ICategoryRepository.cs",
@@ -543,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "EFCategoryRepository.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Repositories\\EFCategoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EFCategoryRepository.cs",
@@ -555,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Update.cshtml",
@@ -567,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoriesController.cs",
@@ -579,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Details.cshtml",
@@ -591,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": "Display.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Display.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Display.cshtml",
@@ -603,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Index.cshtml",
@@ -615,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "Display.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Display.cshtml",
@@ -627,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "ManageNavPages.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
@@ -639,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
@@ -651,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
@@ -663,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -675,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
@@ -687,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "_ManageNav.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
@@ -699,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
@@ -711,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -723,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 74,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -735,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -747,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
@@ -759,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 75,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
@@ -771,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -783,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 70,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\_ViewImports.cshtml",
@@ -795,7 +922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\_ViewStart.cshtml",
@@ -807,7 +934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "SessionExtensions.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Extensions\\SessionExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\SessionExtensions.cs",
@@ -819,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -831,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
@@ -843,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
@@ -855,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -867,7 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 73,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -879,7 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -891,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -903,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -915,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "product.css",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\wwwroot\\css\\product.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\product.css",
@@ -927,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 76,
               "Title": " ProductController.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ ProductController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ ProductController.cs",
@@ -939,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 67,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Update.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Update.cshtml",
@@ -951,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 72,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Product\\Details.cshtml",
@@ -963,7 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 71,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Product\\Edit.cshtml",
@@ -975,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "IndexList.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\IndexList.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\IndexList.cshtml",
@@ -987,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
@@ -999,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -1011,31 +1138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA5wMoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T01:46:26.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T01:39:08.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Product\\Index.cshtml",
@@ -1047,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Delete.cshtml",
@@ -1059,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Add.cshtml",
@@ -1071,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Add.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Add.cshtml",
@@ -1083,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 77,
               "Title": "20250620070414_AddStockQuantityToProduct.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Migrations\\20250620070414_AddStockQuantityToProduct.cs",
               "RelativeDocumentMoniker": "Migrations\\20250620070414_AddStockQuantityToProduct.cs",
@@ -1095,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Details.cshtml",
@@ -1107,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "IndexList.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Home\\IndexList.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\IndexList.cshtml",
@@ -1119,7 +1222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "index.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\index.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\index.cshtml",
@@ -1131,19 +1234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T01:38:42.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "Models\\ProductImage.cs",
@@ -1155,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "ProductListViewModel.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\ProductListViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ProductListViewModel.cs",
@@ -1167,7 +1258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 78,
               "Title": "index.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
@@ -1179,7 +1270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "History.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Order\\History.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\History.cshtml",
@@ -1191,7 +1282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Order\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\Details.cshtml",
@@ -1203,7 +1294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "OrderCompleted.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\OrderCompleted.cshtml",
@@ -1215,7 +1306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 79,
               "Title": "OrderCompleted.cshtml",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
@@ -1227,7 +1318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
@@ -1236,18 +1327,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T01:58:34.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T01:41:45.074Z"
             }
           ]
         },

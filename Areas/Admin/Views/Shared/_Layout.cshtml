@@ -40,13 +40,17 @@
                             <a class="nav-link fw-semibold @(currentController == "Product" ? "active" : "")"
                                asp-area="Admin" asp-controller="Product" asp-action="IndexList">Sản phẩm</a>
                         </li>
-                        @* <li class="nav-item">
+                         <li class="nav-item">
                             <a class="nav-link fw-semibold @(currentController == "Categories" ? "active" : "")"
                                asp-area="Admin" asp-controller="Categories" asp-action="Index">Danh mục</a>
-                        </li> *@
+                        </li> 
                         <li class="nav-item">
                             <a class="nav-link fw-semibold @(currentController == "Order" ? "active" : "")"
                                asp-area="Admin" asp-controller="Order" asp-action="Index">Quản lý đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold @(currentController == "Order" ? "active" : "")"
+                               asp-area="Admin" asp-controller="Statistics" asp-action="Index">Thống kê</a>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">

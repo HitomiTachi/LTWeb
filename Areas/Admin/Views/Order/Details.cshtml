@@ -39,7 +39,7 @@
                 <td>@detail.Product?.Name</td>
                 <td>@detail.Quantity</td>
                 <td>@detail.Price.ToString("N0")</td>
-                <td>@(detail.Price* detail.Quantity).ToString("N0")</td>
+                <td>@((detail.Price * detail.Quantity).ToString("N0"))</td>
             </tr>
         }
     </tbody>

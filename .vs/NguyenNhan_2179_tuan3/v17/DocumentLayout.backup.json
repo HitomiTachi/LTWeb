@@ -1,317 +1,345 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GitHub\\LTWeb\\",
+  "WorkspaceRootPath": "E:\\LTW-new\\LTWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\statistics\\bestsellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\statistics\\bestsellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\nguyennhan_2179_tuan3.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:nguyennhan_2179_tuan3.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\libraries\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:libraries\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\services\\servicesemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:services\\servicesemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\extensions\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:extensions\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\models\\productlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\services\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:services\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\paymentinformationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\paymentinformationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\product\\indexlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\product\\indexlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\statistics\\bestsellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\statistics\\bestsellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\nguyennhan_2179_tuan3.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:nguyennhan_2179_tuan3.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\libraries\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:libraries\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\services\\servicesemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:services\\servicesemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\extensions\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:extensions\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\productlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\productlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\pages\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\pages\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\pages\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\wwwroot\\css\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\wwwroot\\css\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:wwwroot\\css\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\home\\indexlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\home\\indexlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\home\\indexlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\pages\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\pages\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\pages\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\pages\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\pages\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\pages\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\controllers\\ productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\controllers\\ productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\controllers\\ productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\migrations\\20250620070414_addstockquantitytoproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\migrations\\20250620070414_addstockquantitytoproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:migrations\\20250620070414_addstockquantitytoproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|c:\\github\\ltweb\\areas\\admin\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|e:\\ltw-new\\ltweb\\areas\\admin\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD5D4AD1-AB7B-4B31-9F81-68D7E00E1F6D}|NguyenNhan_2179_tuan3.csproj|solutionrelative:areas\\admin\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -322,28 +350,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 828,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -357,154 +365,243 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SD.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\SD.cs",
-              "RelativeDocumentMoniker": "Models\\SD.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Models\\SD.cs",
-              "RelativeToolTip": "Models\\SD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "IVnPayService.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Services\\IVnPayService.cs",
+              "RelativeDocumentMoniker": "Services\\IVnPayService.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Services\\IVnPayService.cs",
+              "RelativeToolTip": "Services\\IVnPayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T21:21:38.247Z",
+              "WhenOpened": "2025-06-26T19:22:41.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T18:13:56.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Models\\OrderDetail.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA1wA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T18:13:52.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PaymentInformationModel.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\PaymentInformationModel.cs",
+              "RelativeDocumentMoniker": "Models\\PaymentInformationModel.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\PaymentInformationModel.cs",
+              "RelativeToolTip": "Models\\PaymentInformationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T18:13:51.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Order\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T17:57:11.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T17:56:41.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IndexList.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\IndexList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\IndexList.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\IndexList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\IndexList.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAiwF0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T17:42:30.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SD.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\SD.cs",
+              "RelativeDocumentMoniker": "Models\\SD.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\SD.cs",
+              "RelativeToolTip": "Models\\SD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T21:21:38.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAcwMUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T06:40:48.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 35,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Delete.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Categories\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T04:06:39.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T04:06:39.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 34,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-24T05:36:23.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T05:36:23.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 31,
               "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAUwHYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T17:56:47.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T17:56:47.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 33,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAkwDcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T01:38:42.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T01:38:42.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 30,
               "Title": "StatisticsController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\StatisticsController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\StatisticsController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\StatisticsController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\StatisticsController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\StatisticsController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\StatisticsController.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAswJUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T10:17:01.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T10:17:01.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\Index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Statistics\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Statistics\\Index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\Index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Statistics\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Statistics\\Index.cshtml",
               "ViewState": "AgIAACIBAAAAAAAAAAAkwD8BAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T10:19:05.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T10:19:05.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAcwEUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwDcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-17T01:41:45.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "OrderCompleted.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\OrderCompleted.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "RelativeToolTip": "Views\\ShoppingCart\\OrderCompleted.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T02:13:33.554Z"
+              "WhenOpened": "2025-06-17T02:13:33.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFAAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-25T17:48:57.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 36,
               "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAADwvx0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -512,133 +609,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAUwIgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAA3wHoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T01:39:08.853Z"
+              "WhenOpened": "2025-06-17T01:39:08.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\OrderController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAcwDkAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAtwEgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T03:09:23.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Order\\Details.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Order\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\Details.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Order\\Details.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Order\\Details.cshtml",
               "RelativeToolTip": "Views\\Order\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T03:17:40.458Z"
+              "WhenOpened": "2025-06-17T03:17:40.458Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "History.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Order\\History.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Order\\History.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\History.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Order\\History.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Order\\History.cshtml",
               "RelativeToolTip": "Views\\Order\\History.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAqwD0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T03:10:32.2Z"
+              "WhenOpened": "2025-06-17T03:10:32.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 28,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\appsettings.json",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\GitHub\\LTWeb\\appsettings.json",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-20T09:02:22.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\PaymentController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\PaymentController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "Controllers\\PaymentController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwD0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwCoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:45:00.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ShoppingCartController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "Controllers\\ShoppingCartController.cs",
-              "ViewState": "AgIAACYBAAAAAAAAAAAAACYBAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T02:02:54.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAAAOYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T01:46:26.691Z",
+              "WhenOpened": "2025-06-26T07:45:00.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 9,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ShoppingCartController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAADgBAAAAAAAAAAAuwEMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T02:02:54.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAAAOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T01:46:26.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\Checkout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\ShoppingCart\\Checkout.cshtml",
               "RelativeToolTip": "Views\\ShoppingCart\\Checkout.cshtml",
               "ViewState": "AgIAAFkAAAAAAAAAAAAkwHUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T07:14:00.446Z"
+              "WhenOpened": "2025-06-26T07:14:00.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Order\\Index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Order\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCMAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T11:07:35.61Z"
+              "WhenOpened": "2025-06-26T11:07:35.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 38,
               "Title": "BestSellers.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Statistics\\BestSellers.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -646,11 +749,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 39,
               "Title": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
               "RelativeDocumentMoniker": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
-              "ToolTip": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\NguyenNhan_2179_tuan3.csproj.Backup.tmp",
               "RelativeToolTip": "NguyenNhan_2179_tuan3.csproj.Backup.tmp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -658,60 +761,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 56,
               "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T21:20:40.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAkwHUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T10:31:28.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Services\\VnPayService.cs",
-              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Services\\VnPayService.cs",
-              "RelativeToolTip": "Services\\VnPayService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:54:53.168Z"
+              "WhenOpened": "2025-06-25T21:20:40.687Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAkwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T10:31:28.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VnPayService.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Services\\VnPayService.cs",
+              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Services\\VnPayService.cs",
+              "RelativeToolTip": "Services\\VnPayService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T07:54:53.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAwJEAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwHwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T02:33:18.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 40,
               "Title": "VnPayLibrary.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Libraries\\VnPayLibrary.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Libraries\\VnPayLibrary.cs",
               "RelativeDocumentMoniker": "Libraries\\VnPayLibrary.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Libraries\\VnPayLibrary.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Libraries\\VnPayLibrary.cs",
               "RelativeToolTip": "Libraries\\VnPayLibrary.cs",
               "ViewState": "AgIAAJoAAAAAAAAAAAAQwMUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -719,11 +823,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 47,
               "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -731,11 +835,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 58,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\GitHub\\LTWeb\\wwwroot\\css\\site.css",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -743,11 +847,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 41,
               "Title": "ServicesEmailSender.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Services\\ServicesEmailSender.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Services\\ServicesEmailSender.cs",
               "RelativeDocumentMoniker": "Services\\ServicesEmailSender.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Services\\ServicesEmailSender.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Services\\ServicesEmailSender.cs",
               "RelativeToolTip": "Services\\ServicesEmailSender.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -755,11 +859,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 62,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\Category.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Models\\Category.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\Category.cs",
               "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -767,11 +871,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 50,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
               "ViewState": "AgIAAHIAAAAAAAAAAAAkwDoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -779,11 +883,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 59,
               "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Repositories\\ICategoryRepository.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Repositories\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ICategoryRepository.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Repositories\\ICategoryRepository.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Repositories\\ICategoryRepository.cs",
               "RelativeToolTip": "Repositories\\ICategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -791,11 +895,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 60,
               "Title": "EFCategoryRepository.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Repositories\\EFCategoryRepository.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Repositories\\EFCategoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EFCategoryRepository.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Repositories\\EFCategoryRepository.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Repositories\\EFCategoryRepository.cs",
               "RelativeToolTip": "Repositories\\EFCategoryRepository.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAwwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -803,11 +907,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 63,
               "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Update.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Categories\\Update.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -815,11 +919,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 64,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Details.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Details.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Details.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Details.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Details.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAAAcwHIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -827,11 +931,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 65,
               "Title": "Display.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Display.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Display.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Display.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Display.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Display.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Display.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -839,11 +943,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 61,
               "Title": "Display.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Categories\\Display.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -851,11 +955,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 49,
               "Title": "ManageNavPages.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -863,23 +967,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-25T17:37:25.258Z"
+              "WhenOpened": "2025-06-25T17:37:25.258Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 44,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\ApplicationDbContext.cs",
               "RelativeToolTip": "Models\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -887,11 +992,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 46,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -899,35 +1004,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 20,
               "Title": "_ManageNav.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-24T06:38:38.818Z"
+              "WhenOpened": "2025-06-24T06:38:38.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 21,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-24T06:38:33.176Z"
+              "WhenOpened": "2025-06-24T06:38:33.176Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 57,
               "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\ScaffoldingReadMe.txt",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\GitHub\\LTWeb\\ScaffoldingReadMe.txt",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\ScaffoldingReadMe.txt",
               "RelativeToolTip": "ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -935,11 +1042,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 79,
               "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\Error.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Shared\\Error.cshtml",
               "RelativeToolTip": "Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -947,11 +1054,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 69,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -959,24 +1066,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 42,
               "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-24T06:14:00.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T06:14:00.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 80,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -984,11 +1090,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 73,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -996,11 +1102,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 75,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\_ViewImports.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Pages\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1008,11 +1114,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 74,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\_ViewStart.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Pages\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1020,11 +1126,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 53,
               "Title": "SessionExtensions.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Extensions\\SessionExtensions.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Extensions\\SessionExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\SessionExtensions.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Extensions\\SessionExtensions.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Extensions\\SessionExtensions.cs",
               "RelativeToolTip": "Extensions\\SessionExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1032,11 +1138,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 48,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1044,11 +1150,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 43,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAwBkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1056,11 +1162,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 78,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1068,11 +1174,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 70,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1080,11 +1186,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 71,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1092,23 +1198,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Program.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Program.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:58:29.953Z"
+              "WhenOpened": "2025-06-20T08:58:29.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 67,
               "Title": "product.css",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\wwwroot\\css\\product.css",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\wwwroot\\css\\product.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\product.css",
-              "ToolTip": "C:\\GitHub\\LTWeb\\wwwroot\\css\\product.css",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\wwwroot\\css\\product.css",
               "RelativeToolTip": "wwwroot\\css\\product.css",
               "ViewState": "AgIAAHoAAAAAAAAAAAAwwIMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -1116,24 +1223,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 81,
               "Title": " ProductController.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ ProductController.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\ ProductController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ ProductController.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Controllers\\ ProductController.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Controllers\\ ProductController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\ ProductController.cs",
               "ViewState": "AgIAAA0BAAAAAAAAAAAgwE4BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T07:41:31.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T07:41:31.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 72,
               "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Update.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Update.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Update.cshtml",
               "ViewState": "AgIAAKYAAAAAAAAAAAAkwL8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1141,11 +1247,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 77,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Details.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Product\\Details.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Details.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\Product\\Details.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Pages\\Product\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1153,11 +1259,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 76,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Edit.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Product\\Edit.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Edit.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\Product\\Edit.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Pages\\Product\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1165,23 +1271,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 7,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\Product.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Models\\Product.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwBMAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T02:40:57.984Z"
+              "WhenOpened": "2025-06-17T02:40:57.984Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 66,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Product\\Index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Pages\\Product\\Index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Pages\\Product\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Pages\\Product\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1189,11 +1296,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Add.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Categories\\Add.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1201,11 +1308,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 52,
               "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Add.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\Product\\Add.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Add.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1213,11 +1320,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 82,
               "Title": "20250620070414_AddStockQuantityToProduct.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Migrations\\20250620070414_AddStockQuantityToProduct.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Migrations\\20250620070414_AddStockQuantityToProduct.cs",
               "RelativeDocumentMoniker": "Migrations\\20250620070414_AddStockQuantityToProduct.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Migrations\\20250620070414_AddStockQuantityToProduct.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Migrations\\20250620070414_AddStockQuantityToProduct.cs",
               "RelativeToolTip": "Migrations\\20250620070414_AddStockQuantityToProduct.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1225,11 +1332,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 45,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Home\\Details.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Details.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Home\\Details.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Home\\Details.cshtml",
               "RelativeToolTip": "Views\\Home\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1237,11 +1344,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 68,
               "Title": "IndexList.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\Home\\IndexList.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\Home\\IndexList.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\IndexList.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\Home\\IndexList.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\Home\\IndexList.cshtml",
               "RelativeToolTip": "Views\\Home\\IndexList.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1249,23 +1356,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 13,
               "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Views\\ShoppingCart\\index.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Views\\ShoppingCart\\index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Views\\ShoppingCart\\index.cshtml",
               "RelativeToolTip": "Views\\ShoppingCart\\index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T02:11:46.736Z"
+              "WhenOpened": "2025-06-17T02:11:46.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 55,
               "Title": "ProductImage.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\ProductImage.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "Models\\ProductImage.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Models\\ProductImage.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\ProductImage.cs",
               "RelativeToolTip": "Models\\ProductImage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1273,11 +1381,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "ProductListViewModel.cs",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Models\\ProductListViewModel.cs",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Models\\ProductListViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ProductListViewModel.cs",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Models\\ProductListViewModel.cs",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Models\\ProductListViewModel.cs",
               "RelativeToolTip": "Models\\ProductListViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1285,11 +1393,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 83,
               "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\ShoppingCart\\index.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1297,45 +1405,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 84,
               "Title": "OrderCompleted.cshtml",
-              "DocumentMoniker": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "DocumentMoniker": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
-              "ToolTip": "C:\\GitHub\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ToolTip": "E:\\LTW-new\\LTWeb\\Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\ShoppingCart\\OrderCompleted.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-17T02:13:54.457Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 204,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 396,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 145,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

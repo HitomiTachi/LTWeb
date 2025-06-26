@@ -46,7 +46,11 @@ else
                     <td>@order.Status</td>
                     <td>
                         <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-outline-info">Chi tiết</a>
-                        @if (order.Status == "Chờ xác nhận" && order.OrderDate.AddDays(1) > DateTime.UtcNow)
+
+                        @if (
+                                        (order.Status == "Chờ xác nhận" && order.OrderDate.AddDays(1) > DateTime.UtcNow) 
+                                        @* (order.PaymentMethod == "VnPay" && order.Status == "Đã thanh toán" && order.OrderDate.AddDays(1) > DateTime.UtcNow) *@
+                                        )
                         {
                             <form asp-action="CancelOrder" method="post" style="display:inline;" onsubmit="return confirm('Bạn chắc chắn muốn hủy đơn hàng này?');">
                                 <input type="hidden" name="orderId" value="@order.Id" />
@@ -54,6 +58,17 @@ else
                                 <button type="submit" class="btn btn-sm btn-danger">Hủy đơn</button>
                             </form>
                         }
+
+                        @* @if (
+                                        order.Status == "Đã xác nhận" && order.OrderDate.AddDays(1) > DateTime.UtcNow
+                                        )
+                        {
+                            <form asp-action="CancelOrder" method="post" style="display:inline;" onsubmit="return confirm('Bạn muốn gửi yêu cầu hủy đơn hàng này?');">
+                                <input type="hidden" name="orderId" value="@order.Id" />
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-danger">Yêu cầu hủy đơn</button>
+                            </form>
+                        } *@
                     </td>
                 </tr>
             }

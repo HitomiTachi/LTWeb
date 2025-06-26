@@ -26,16 +26,24 @@ public class OrderController : Controller
         return View(orders);
     }
 
-    // Chi tiết đơn hàng
-    public IActionResult Details(int id)
+    public async Task<IActionResult> Details(int id)
     {
         var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
-        var order = _context.Orders.FirstOrDefault(o => o.Id == id && o.UserId == userId);
-        if (order == null)
-            return NotFound();
 
-        var details = _context.OrderDetails.Where(d => d.OrderId == id).ToList();
-        ViewBag.OrderDetails = details;
+        var order = await _context.Orders
+            .Include(o => o.ApplicationUser)
+            .FirstOrDefaultAsync(o => o.Id == id && o.UserId == userId);
+
+        if (order == null)
+        {
+            return NotFound();
+        }
+
+        ViewBag.OrderDetails = await _context.OrderDetails
+            .Where(od => od.OrderId == id)
+            .Include(od => od.Product) // BỔ SUNG DÒNG NÀY
+            .ToListAsync();
+
         return View(order);
     }
     [HttpPost]
@@ -65,7 +73,19 @@ public class OrderController : Controller
             return RedirectToAction("History");
         }
 
-        // Hoàn lại tồn kho cho từng sản phẩm trong đơn
+        if (order.PaymentMethod == "VnPay")
+        {
+            // Đánh dấu đơn hàng là "Yêu cầu hủy (VNPay)" và gửi thông báo cho admin
+            order.Status = "Yêu cầu hủy (VNPay)";
+            _context.Orders.Update(order);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Yêu cầu hủy đơn hàng đã được gửi tới quản trị viên. Vui lòng chờ xác nhận!";
+            // TODO: Gửi email/thông báo cho admin nếu cần
+            return RedirectToAction("History");
+        }
+
+        // Hoàn lại tồn kho cho từng sản phẩm trong đơn (chỉ cho đơn tiền mặt)
         foreach (var detail in order.OrderDetails)
         {
             var product = await _context.Products.FindAsync(detail.ProductId);

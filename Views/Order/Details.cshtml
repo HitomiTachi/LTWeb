@@ -5,6 +5,14 @@
 }
 
 <h2>Chi tiết đơn hàng #@Model.Id</h2>
+
+<div class="mb-3">
+    <h4>Thông tin khách hàng</h4>
+    <p>Họ tên: @Model.ApplicationUser?.FullName</p>
+    <p>Email: @Model.ApplicationUser?.Email</p>
+    <p>Địa chỉ: @Model.ShippingAddress</p>
+</div>
+
 <p>Ngày đặt: @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</p>
 <p>Tổng tiền: @Model.TotalPrice.ToString("N0") VNĐ</p>
 <p>Trạng thái: @Model.Status</p>
@@ -21,10 +29,10 @@
         @foreach (var d in details)
         {
             <tr>
-                <td>@d.Product</td>
+                <td>@d.Product?.Name</td>
                 <td>@d.Quantity</td>
                 <td>@d.Price.ToString("N0")</td>
-                <td>@((d.Quantity * d.Price).ToString("N0"))</td>
+                <td>@((d.Price * d.Quantity).ToString("N0"))</td>
             </tr>
         }
     </table>

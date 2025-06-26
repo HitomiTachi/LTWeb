@@ -126,7 +126,10 @@ namespace NguyenNhan_2179_tuan3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Checkout(Order order)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey());
+            // Lấy cart từ session SelectedCart nếu có, nếu không thì lấy toàn bộ giỏ hàng
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("SelectedCart")
+                       ?? HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey());
+
             if (cart == null || !cart.Items.Any())
             {
                 TempData["Error"] = "Giỏ hàng trống!";
@@ -193,14 +196,17 @@ namespace NguyenNhan_2179_tuan3.Controllers
             // Xử lý thanh toán
             if (order.PaymentMethod == "VnPay")
             {
+                var totalQuantity = cart.Items.Sum(i => i.Quantity);
+                var productList = string.Join(", ", cart.Items.Select(i => $"{i.Name} x{i.Quantity}"));
                 var paymentInfo = new PaymentInformationModel
                 {
                     Amount = (int)order.TotalPrice,
-                    OrderDescription = $"Thanh toán đơn hàng #{order.Id}",
+                    OrderDescription = $"ĐH#{order.Id} | SL: {totalQuantity} | {productList}",
                     OrderType = "billpayment",
                     Name = user.UserName
                 };
                 HttpContext.Session.SetString("OrderPending", Newtonsoft.Json.JsonConvert.SerializeObject(order));
+                HttpContext.Session.Remove("SelectedCart");
                 return RedirectToAction("CreatePaymentUrlVnpay", "Payment", paymentInfo);
             }
             else // Tiền mặt, chuyển khoản, v.v.
@@ -208,6 +214,7 @@ namespace NguyenNhan_2179_tuan3.Controllers
                 _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
                 HttpContext.Session.Remove(GetCartKey());
+                HttpContext.Session.Remove("SelectedCart");
                 return View("OrderCompleted", order.Id);
             }
         }
@@ -292,6 +299,26 @@ namespace NguyenNhan_2179_tuan3.Controllers
 
             return RedirectToAction("Index");
         }
-       
+
+
+        [HttpPost]
+        public IActionResult CheckoutSelected(int[] selectedProductIds)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey()) ?? new ShoppingCart();
+            var selectedItems = cart.Items.Where(i => selectedProductIds.Contains(i.ProductId)).ToList();
+
+            if (!selectedItems.Any())
+            {
+                TempData["Error"] = "Bạn chưa chọn sản phẩm nào để thanh toán!";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu các sản phẩm đã chọn vào session để dùng cho bước thanh toán
+            HttpContext.Session.SetObjectAsJson("SelectedCart", new ShoppingCart { Items = selectedItems });
+
+            // Truyền sang view Checkout (có thể truyền selectedItems nếu muốn hiển thị)
+            return View("Checkout", new Order());
+        }
+
     }
 }

@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using NguyenNhan_2179_tuan3.Models;
 using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using Newtonsoft.Json;
 
 namespace NguyenNhan_2179_tuan3.Controllers
 {
@@ -21,31 +23,37 @@ namespace NguyenNhan_2179_tuan3.Controllers
             var url = _vnPayService.CreatePaymentUrl(model, HttpContext);
             return Redirect(url);
         }
+
         [HttpGet]
         public IActionResult PaymentCallbackVnpay()
         {
             var response = _vnPayService.PaymentExecute(Request.Query);
 
-            // Lấy lại order từ Session (nếu cần)
             Order? order = null;
             var orderJson = HttpContext.Session.GetString("OrderPending");
             if (orderJson != null)
             {
-                order = Newtonsoft.Json.JsonConvert.DeserializeObject<Order>(orderJson);
+                order = JsonConvert.DeserializeObject<Order>(orderJson);
             }
 
-            // Thanh toán thành công
             if (response.Success && response.VnPayResponseCode == "00")
             {
                 if (order != null)
                 {
-                    order.Status = "Đã thanh toán";
+                    order.Status = "Chờ xác nhận";
+                    //order.Status = "Đã thanh toán";
                     _context.Orders.Add(order);
                     _context.SaveChanges();
                     HttpContext.Session.Remove("OrderPending");
                 }
-                ViewBag.Message = "Thanh toán thành công! Đơn hàng của bạn đã được xác nhận.";
-                return View("Success", response);
+
+                // Xóa giỏ hàng theo người dùng
+                string cartKey = GetCartKey();
+                HttpContext.Session.Remove(cartKey);
+
+                TempData["Message"] = "Thanh toán thành công! Cảm ơn bạn đã đặt hàng.";
+                return RedirectToAction("Checkout", "ShoppingCart", new { id = order?.Id });
+
             }
             else if (response.VnPayResponseCode == "24")
             {
@@ -57,6 +65,20 @@ namespace NguyenNhan_2179_tuan3.Controllers
                 ViewBag.Message = $"Giao dịch không thành công. Mã lỗi: {response.VnPayResponseCode}";
                 return View("Fail", response);
             }
+        }
+
+        // Helper để lấy key giỏ hàng phù hợp với từng người dùng
+        private string GetCartKey()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (!string.IsNullOrEmpty(userId))
+                {
+                    return $"Cart_{userId}";
+                }
+            }
+            return "Cart";
         }
     }
 }

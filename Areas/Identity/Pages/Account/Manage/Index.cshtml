@@ -1,8 +1,14 @@
 ﻿@page
 @model IndexModel
+@using Microsoft.AspNetCore.Identity
+@using NguyenNhan_2179_tuan3.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
 @{
     ViewData["Title"] = "Hồ sơ cá nhân";
     ViewData["ActivePage"] = ManageNavPages.Index;
+    var isAdmin = User.IsInRole("Admin");
 }
 
 <h3 class="mb-4 text-secondary">@ViewData["Title"]</h3>
@@ -18,9 +24,12 @@
                 <input asp-for="Username" class="form-control" placeholder="Tên đăng nhập" disabled />
                 <label asp-for="Username"></label>
             </div>
-            <a href="/Order/History" class="btn btn-outline-primary mb-3">
-                <i class="bi bi-clock-history me-1"></i> Xem lịch sử đơn hàng
-            </a>
+            @if (!isAdmin)
+            {
+                <a href="/Order/History" class="btn btn-outline-primary mb-3">
+                    <i class="bi bi-clock-history me-1"></i> Xem lịch sử đơn hàng
+                </a>
+            }
             @* <div class="form-floating mb-3">
                 <input asp-for="Input.FullName" class="form-control" placeholder="Họ và tên" />
                 <label asp-for="Input.FullName"></label>

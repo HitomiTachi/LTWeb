@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Extensions;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Repositories;
 using NguyenNhan_2179_tuan3.Services;
-using System.Security.Claims;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace NguyenNhan_2179_tuan3.Controllers
@@ -291,5 +292,6 @@ namespace NguyenNhan_2179_tuan3.Controllers
 
             return RedirectToAction("Index");
         }
+       
     }
 }

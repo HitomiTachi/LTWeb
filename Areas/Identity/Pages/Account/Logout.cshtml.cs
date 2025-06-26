@@ -1,8 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
-
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -24,22 +20,11 @@ namespace NguyenNhan_2179_tuan3.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPost(string returnUrl = null)
         {
-            // KHÔNG xóa session giỏ hàng user khi đăng xuất
-            // Nếu muốn xóa giỏ hàng khách khi đăng xuất (không bắt buộc), giữ dòng sau:
-            // HttpContext.Session.Remove("Cart");
-
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
-            if (returnUrl != null)
-            {
-                return LocalRedirect(returnUrl);
-            }
-            else
-            {
-                // This needs to be a redirect so that the browser performs a new
-                // request and the identity for the user gets updated.
-                return RedirectToPage();
-            }
+
+            // Chuyển hướng về trang đăng nhập
+            return RedirectToPage("/Account/Login", new { area = "Identity" });
         }
     }
 }

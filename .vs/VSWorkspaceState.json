@@ -9,8 +9,9 @@
     "\\Services",
     "\\Views",
     "\\Views\\Home",
+    "\\Views\\Order",
     "\\Views\\ShoppingCart"
   ],
-  "SelectedNode": "\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+  "SelectedNode": "\\Views\\Order\\History.cshtml",
   "PreviewInSolutionExplorer": false
 }

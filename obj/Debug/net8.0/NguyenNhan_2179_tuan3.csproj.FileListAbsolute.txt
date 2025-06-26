@@ -296,3 +296,7 @@ C:\GitHub\LTWeb\obj\Debug\net8.0\refint\NguyenNhan_2179_tuan3.dll
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.pdb
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.genruntimeconfig.cache
 C:\GitHub\LTWeb\obj\Debug\net8.0\ref\NguyenNhan_2179_tuan3.dll
+C:\GitHub\LTWeb\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\GitHub\LTWeb\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\GitHub\LTWeb\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\GitHub\LTWeb\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

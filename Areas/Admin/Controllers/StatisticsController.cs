@@ -34,14 +34,25 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
             ViewBag.OrdersThisMonth = await _context.Orders.CountAsync(o => o.OrderDate.Month == DateTime.Now.Month && o.OrderDate.Year == DateTime.Now.Year);
             ViewBag.OrdersCanceled = await _context.Orders.CountAsync(o => o.Status == "Đã hủy");
 
-            // Doanh thu tổng, theo ngày, theo tháng
-            ViewBag.TotalRevenue = await _context.Orders.Where(o => o.Status != "Đã hủy").SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
-            ViewBag.TodayRevenue = await _context.Orders.Where(o => o.OrderDate.Date == DateTime.Today && o.Status != "Đã hủy").SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
-            ViewBag.MonthRevenue = await _context.Orders.Where(o => o.OrderDate.Month == DateTime.Now.Month && o.OrderDate.Year == DateTime.Now.Year && o.Status != "Đã hủy").SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
+            // Doanh thu tổng, theo ngày, theo tháng - CHỈ tính đơn đã xác nhận/đã giao/thành công
+            var confirmedStatuses = new[] { "Đã xác nhận", "Đã giao", "Thành công" }; // chỉnh lại nếu trạng thái của bạn khác
 
-            // Doanh thu theo khoảng thời gian chọn
+            ViewBag.TotalRevenue = await _context.Orders
+                .Where(o => confirmedStatuses.Contains(o.Status))
+                .SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
+
+            ViewBag.TodayRevenue = await _context.Orders
+                .Where(o => o.OrderDate.Date == DateTime.Today && confirmedStatuses.Contains(o.Status))
+                .SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
+
+            ViewBag.MonthRevenue = await _context.Orders
+                .Where(o => o.OrderDate.Month == DateTime.Now.Month && o.OrderDate.Year == DateTime.Now.Year
+                        && confirmedStatuses.Contains(o.Status))
+                .SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
+
+            // Doanh thu theo khoảng thời gian chọn (chỉ các đơn xác nhận)
             var filteredRevenue = await _context.Orders
-                .Where(o => o.OrderDate >= from && o.OrderDate <= to && o.Status != "Đã hủy")
+                .Where(o => o.OrderDate >= from && o.OrderDate <= to && confirmedStatuses.Contains(o.Status))
                 .SumAsync(o => (decimal?)o.TotalPrice) ?? 0;
             ViewBag.FilteredRevenue = filteredRevenue;
 
@@ -60,7 +71,7 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
 
             // Sản phẩm bán chạy nhất (top 5, theo filter nếu muốn)
             ViewBag.BestSellers = await _context.OrderDetails
-                .Where(od => od.Order.OrderDate >= from && od.Order.OrderDate <= to)
+                .Where(od => od.Order.OrderDate >= from && od.Order.OrderDate <= to && confirmedStatuses.Contains(od.Order.Status))
                 .GroupBy(od => od.ProductId)
                 .OrderByDescending(g => g.Sum(od => od.Quantity))
                 .Select(g => new
@@ -79,13 +90,17 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 .ToListAsync();
 
             // Đơn hàng theo phương thức thanh toán (theo filter)
-            ViewBag.VnPayOrderCount = await _context.Orders.Where(o => o.OrderDate >= from && o.OrderDate <= to).CountAsync(o => o.PaymentMethod == "VnPay");
-            ViewBag.CashOrderCount = await _context.Orders.Where(o => o.OrderDate >= from && o.OrderDate <= to).CountAsync(o => o.PaymentMethod != "VnPay");
+            ViewBag.VnPayOrderCount = await _context.Orders
+                .Where(o => o.OrderDate >= from && o.OrderDate <= to)
+                .CountAsync(o => o.PaymentMethod == "VnPay");
+            ViewBag.CashOrderCount = await _context.Orders
+                .Where(o => o.OrderDate >= from && o.OrderDate <= to)
+                .CountAsync(o => o.PaymentMethod != "VnPay");
 
-            // Đơn hoàn tiền/đổi trả (nếu có field, ví dụ Status = "Đã hoàn tiền")
-            ViewBag.RefundedOrders = await _context.Orders.CountAsync(o => o.Status == "Đã hoàn tiền");
+            // Đơn đã hủy (thay vì hoàn tiền)
+            ViewBag.CanceledOrders = await _context.Orders.CountAsync(o => o.Status == "Đã hủy");
 
-            // Dữ liệu biểu đồ: Doanh thu theo ngày trong khoảng filter (nếu cùng tháng)
+            // Dữ liệu biểu đồ: Doanh thu theo ngày trong khoảng filter (chỉ đơn xác nhận)
             int daysInRange = (to.Date - from.Date).Days + 1;
             var revenueByDay = Enumerable.Range(0, daysInRange)
                 .Select(offset => {
@@ -94,15 +109,15 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                     {
                         Day = date.ToString("dd/MM"),
                         Revenue = _context.Orders
-                            .Where(o => o.OrderDate.Date == date && o.Status != "Đã hủy")
+                            .Where(o => o.OrderDate.Date == date && confirmedStatuses.Contains(o.Status))
                             .Sum(o => (decimal?)o.TotalPrice) ?? 0
                     };
                 }).ToList();
             ViewBag.RevenueByDayJson = JsonSerializer.Serialize(revenueByDay);
 
-            // Dữ liệu Pie chart: tỷ lệ đơn theo phương thức thanh toán (trong khoảng filter)
+            // Dữ liệu Pie chart: tỷ lệ đơn theo phương thức thanh toán (chỉ đơn xác nhận)
             var paymentStats = await _context.Orders
-                .Where(o => o.OrderDate >= from && o.OrderDate <= to)
+                .Where(o => o.OrderDate >= from && o.OrderDate <= to && confirmedStatuses.Contains(o.Status))
                 .GroupBy(o => o.PaymentMethod)
                 .Select(g => new { Method = g.Key, Count = g.Count() })
                 .ToListAsync();
@@ -115,7 +130,9 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
         // Thống kê sản phẩm bán chạy (toàn bộ hoặc theo tháng nếu muốn)
         public async Task<IActionResult> BestSellers()
         {
+            var confirmedStatuses = new[] { "Đã xác nhận", "Đã giao", "Thành công" }; // chỉnh lại nếu trạng thái của bạn khác
             var bestSellers = await _context.OrderDetails
+                .Where(od => confirmedStatuses.Contains(od.Order.Status))
                 .GroupBy(od => od.ProductId)
                 .OrderByDescending(g => g.Sum(od => od.Quantity))
                 .Select(g => new

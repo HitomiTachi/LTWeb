@@ -275,6 +275,7 @@ C:\GitHub\LTWeb\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptog
 C:\GitHub\LTWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\GitHub\LTWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.csproj.AssemblyReference.cache
+C:\GitHub\LTWeb\obj\Debug\net8.0\rpswa.dswa.cache.json
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.GeneratedMSBuildEditorConfig.editorconfig
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.AssemblyInfoInputs.cache
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.AssemblyInfo.cs
@@ -284,6 +285,9 @@ C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.MvcApplicationPartsAssemb
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.RazorAssemblyInfo.cache
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.RazorAssemblyInfo.cs
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.sourcelink.json
+C:\GitHub\LTWeb\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\GitHub\LTWeb\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\GitHub\LTWeb\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 C:\GitHub\LTWeb\obj\Debug\net8.0\scopedcss\bundle\NguyenNhan_2179_tuan3.styles.css
 C:\GitHub\LTWeb\obj\Debug\net8.0\staticwebassets.build.json
 C:\GitHub\LTWeb\obj\Debug\net8.0\staticwebassets.build.json.cache
@@ -296,7 +300,3 @@ C:\GitHub\LTWeb\obj\Debug\net8.0\refint\NguyenNhan_2179_tuan3.dll
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.pdb
 C:\GitHub\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.genruntimeconfig.cache
 C:\GitHub\LTWeb\obj\Debug\net8.0\ref\NguyenNhan_2179_tuan3.dll
-C:\GitHub\LTWeb\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\GitHub\LTWeb\obj\Debug\net8.0\rjimswa.dswa.cache.json
-C:\GitHub\LTWeb\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
-C:\GitHub\LTWeb\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

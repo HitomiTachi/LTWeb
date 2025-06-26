@@ -20,6 +20,14 @@
             </a>
         </div>
 
+        @* Hiển thị thông báo lỗi nếu có *@
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger mb-3">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
         @if (!Model.Any())
         {
             <div class="text-center py-5">
@@ -40,8 +48,7 @@
                             <th>Giá</th>
                             <th>Danh mục</th>
                             <th>Ảnh đại diện</th>
-                            <th>Ảnh phụ</th>
-                            <th>Số lượng tồn</th> <!-- Thêm cột số lượng tồn -->
+                            <th>Số lượng tồn</th>
                             <th>Thao tác</th>
                         </tr>
                     </thead>
@@ -66,28 +73,7 @@
                                     }
                                 </td>
                                 <td class="text-center">
-                                    @if (item.Images != null && item.Images.Any())
-                                    {
-                                        <div class="d-flex flex-wrap gap-1 justify-content-center">
-                                            @foreach (var img in item.Images.Take(3))
-                                            {
-                                                <img src="@img.Url" width="55" height="55"
-                                                     class="img-thumbnail border"
-                                                     style="object-fit:cover;" />
-                                            }
-                                            @if (item.Images.Count > 3)
-                                            {
-                                                <span class="badge bg-secondary align-self-center">+@((item.Images.Count) - 3)</span>
-                                            }
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        <span class="text-muted fst-italic">Không</span>
-                                    }
-                                </td>
-                                <td class="text-center">
-                                    <span class="fw-bold">@item.StockQuantity</span> <!-- Hiển thị số lượng tồn -->
+                                    <span class="fw-bold">@item.StockQuantity</span>
                                 </td>
                                 <td class="text-center">
                                     <a asp-action="Details" asp-route-id="@item.Id"

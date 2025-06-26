@@ -88,7 +88,9 @@ namespace NguyenNhan_2179_tuan3.Areas.Identity.Pages.Account
             if (!_roleManager.RoleExistsAsync(SD.Role_Customer).GetAwaiter().GetResult())
             {
                 _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).GetAwaiter().GetResult();
+                //_roleManager.CreateAsync(new IdentityRole(SD.Role_Employee)).GetAwaiter().GetResult();
                 _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).GetAwaiter().GetResult();
+               // _roleManager.CreateAsync(new IdentityRole(SD.Role_Company)).GetAwaiter().GetResult();
             }
 
             Input = new InputModel();
@@ -102,11 +104,11 @@ namespace NguyenNhan_2179_tuan3.Areas.Identity.Pages.Account
                     var roles = await _userManager.GetRolesAsync(currentUser);
                     if (roles.Contains(SD.Role_Admin))
                     {
-                        Input.RoleList = new List<SelectListItem>
+                        Input.RoleList = _roleManager.Roles.Select(r => new SelectListItem
                         {
-                            new SelectListItem { Text = SD.Role_Admin, Value = SD.Role_Admin },
-                            new SelectListItem { Text = SD.Role_Customer, Value = SD.Role_Customer }
-                        };
+                            Text = r.Name,
+                            Value = r.Name
+                        });
                     }
                 }
             }

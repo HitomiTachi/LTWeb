@@ -7,7 +7,6 @@ using NguyenNhan_2179_tuan3.Repositories;
 [Authorize(Roles = SD.Role_Admin)]
 public class CategoriesController : Controller
 {
-
     private readonly IProductRepository _productRepository;
     private readonly ICategoryRepository _categoryRepository;
 
@@ -26,7 +25,7 @@ public class CategoriesController : Controller
 
     public async Task<IActionResult> Display(int id)
     {
-//        var category = await _categoryRepository.GetByIdAsync(id);
+        // var category = await _categoryRepository.GetByIdAsync(id);
         var category = await _categoryRepository.GetByIdWithProductsAsync(id);
         if (category == null)
         {
@@ -34,6 +33,7 @@ public class CategoriesController : Controller
         }
         return View(category);
     }
+
     public IActionResult Add()
     {
         return View();
@@ -88,11 +88,21 @@ public class CategoriesController : Controller
     [HttpPost, ActionName("DeleteConfirmed")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var category = await _categoryRepository.GetByIdAsync(id);
-        if (category != null)
+        var category = await _categoryRepository.GetByIdWithProductsAsync(id);
+        if (category == null)
         {
-            await _categoryRepository.DeleteAsync(id); // ✅ Thêm await
+            return NotFound();
         }
+
+        // Kiểm tra nếu danh mục này đã có sản phẩm
+        if (category.Products != null && category.Products.Any())
+        {
+            // Gửi thông báo lỗi ra View (cách 1: TempData để chuyển thông báo qua Redirect)
+            TempData["ErrorMessage"] = "Không thể xóa danh mục vì đã có sản phẩm thuộc danh mục này.";
+            return RedirectToAction(nameof(Delete), new { id = id });
+        }
+
+        await _categoryRepository.DeleteAsync(id);
         return RedirectToAction(nameof(Index));
     }
 

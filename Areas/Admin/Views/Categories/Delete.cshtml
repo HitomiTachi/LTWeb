@@ -2,9 +2,23 @@
 
 <h2>Xóa Danh mục</h2>
 
-<form asp-action="DeleteConfirmed" method="post">
-    <input type="hidden" asp-for="Id" />
-    <p>Bạn có chắc chắn muốn xóa danh mục <strong>@Model.Name</strong> không?</p>
-    <button type="submit" class="btn btn-danger">Xóa</button>
-    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
-</form>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] == null)
+{
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <p>Bạn có chắc chắn muốn xóa danh mục <strong>@Model.Name</strong> không?</p>
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+}
+else
+{
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+}

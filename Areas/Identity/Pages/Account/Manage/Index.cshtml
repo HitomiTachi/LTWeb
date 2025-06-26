@@ -18,16 +18,23 @@
                 <input asp-for="Username" class="form-control" placeholder="Tên đăng nhập" disabled />
                 <label asp-for="Username"></label>
             </div>
-
-            <div class="form-floating mb-3">
+            <a href="/Order/History" class="btn btn-outline-primary mb-3">
+                <i class="bi bi-clock-history me-1"></i> Xem lịch sử đơn hàng
+            </a>
+            @* <div class="form-floating mb-3">
+                <input asp-for="Input.FullName" class="form-control" placeholder="Họ và tên" />
+                <label asp-for="Input.FullName"></label>
+                <span asp-validation-for="Input.FullName" class="text-danger"></span>
+            </div>  *@
+            @* <div class="form-floating mb-3">
                 <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Số điện thoại" />
                 <label asp-for="Input.PhoneNumber"></label>
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
-            </div>
+            </div> *@
 
-            <button type="submit" class="btn btn-primary w-100 py-2">
+            @* <button type="submit" class="btn btn-primary w-100 py-2">
                 <i class="bi bi-save me-1"></i> Lưu thay đổi
-            </button>
+            </button> *@
         </form>
     </div>
 </div>

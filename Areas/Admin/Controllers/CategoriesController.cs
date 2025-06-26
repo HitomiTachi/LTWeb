@@ -26,14 +26,14 @@ public class CategoriesController : Controller
 
     public async Task<IActionResult> Display(int id)
     {
-        var category = await _categoryRepository.GetByIdAsync(id);
+//        var category = await _categoryRepository.GetByIdAsync(id);
+        var category = await _categoryRepository.GetByIdWithProductsAsync(id);
         if (category == null)
         {
             return NotFound();
         }
         return View(category);
     }
-
     public IActionResult Add()
     {
         return View();

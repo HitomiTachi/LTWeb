@@ -24,6 +24,14 @@ namespace NguyenNhan_2179_tuan3.Repositories
             return await _context.Categories.FindAsync(id);
         }
 
+        // Lấy danh mục theo ID cùng với sản phẩm
+        public async Task<Category?> GetByIdWithProductsAsync(int id)
+        {
+            return await _context.Categories
+                .Include(c => c.Products)
+                .FirstOrDefaultAsync(c => c.Id == id);
+        }
+
         // Thêm danh mục mới
         public async Task AddAsync(Category category)
         {

@@ -56,8 +56,12 @@ namespace NguyenNhan_2179_tuan3.Areas.Identity.Pages.Account.Manage
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
+            /// 
+            [Display(Name = "Họ và tên")]
+            public string FullName { get; set; }
+
             [Phone]
-            [Display(Name = "Phone number")]
+            [Display(Name = "Số điện thoại")]
             public string PhoneNumber { get; set; }
         }
 

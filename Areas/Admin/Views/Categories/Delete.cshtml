@@ -1,10 +1,10 @@
-﻿@model NguyenNhan_2179_tuan3.Models.Product
+﻿@model NguyenNhan_2179_tuan3.Models.Category
 
-<h2>Delete Product</h2>
+<h2>Xóa Danh mục</h2>
 
-<form asp-action="Delete" method="post">
+<form asp-action="DeleteConfirmed" method="post">
     <input type="hidden" asp-for="Id" />
-    <p>Bạn có chắc chắn muốn xóa sản phẩm <strong>@Model.Name</strong> không?</p>
+    <p>Bạn có chắc chắn muốn xóa danh mục <strong>@Model.Name</strong> không?</p>
     <button type="submit" class="btn btn-danger">Xóa</button>
-    <a asp-action="IndexList" class="btn btn-secondary">Hủy</a>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
 </form>

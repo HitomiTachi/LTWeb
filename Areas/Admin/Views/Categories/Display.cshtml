@@ -8,7 +8,21 @@
 
 <div>
     <p><strong>Tên:</strong> @Model.Name</p>
-  
 </div>
+
+@if (Model.Products != null && Model.Products.Any())
+{
+    <h4>Sản phẩm thuộc danh mục này:</h4>
+    <ul>
+        @foreach (var product in Model.Products)
+        {
+            <li>@product.Name</li>
+        }
+    </ul>
+}
+else
+{
+    <p class="text-muted">Không có sản phẩm nào trong danh mục này.</p>
+}
 
 <a asp-action="Index" class="btn btn-secondary">Quay lại</a>

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Extensions;
 using NguyenNhan_2179_tuan3.Models;
+using NguyenNhan_2179_tuan3.Services;
 using System.Security.Claims;
 
 namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
@@ -12,11 +13,16 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
+        private readonly IVnPayService _vnPayService; // Thêm dòng này
 
-        public ShoppingCartController(UserManager<ApplicationUser> userManager, ApplicationDbContext context)
+        public ShoppingCartController(
+            UserManager<ApplicationUser> userManager,
+            ApplicationDbContext context,
+            IVnPayService vnPayService) // Thêm vào constructor
         {
             _userManager = userManager;
             _context = context;
+            _vnPayService = vnPayService; // Gán giá trị
         }
 
         // Helper để lấy key giỏ hàng phù hợp user
@@ -105,6 +111,13 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
+            // Kiểm tra hợp lệ model
+            if (!ModelState.IsValid)
+            {
+                // Trả lại view với lỗi, không chuyển trang
+                return View(order);
+            }
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -146,6 +159,20 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 Price = i.Price
             }).ToList();
             order.Status = "Chờ xác nhận";
+
+            // Xử lý phương thức thanh toán
+            if (order.PaymentMethod == "VnPay")
+            {
+                var paymentInfo = new PaymentInformationModel
+                {
+                    Amount = (int)order.TotalPrice,
+                    OrderDescription = $"Thanh toán đơn hàng (Admin)",
+                    OrderType = "billpayment",
+                    Name = user.UserName
+                };
+                TempData["Order"] = Newtonsoft.Json.JsonConvert.SerializeObject(order);
+                return RedirectToAction("CreatePaymentUrlVnpay", "Payment", new { area = "", Amount = paymentInfo.Amount, OrderDescription = paymentInfo.OrderDescription, OrderType = paymentInfo.OrderType, Name = paymentInfo.Name });
+            }
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();

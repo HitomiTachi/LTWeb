@@ -12,5 +12,6 @@ namespace NguyenNhan_2179_tuan3.Models
 
         // Không bắt buộc nhưng nên khởi tạo để tránh null
         public List<Product> Products { get; set; } = new List<Product>();
+
     }
 }

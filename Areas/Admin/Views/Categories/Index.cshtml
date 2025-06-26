@@ -80,11 +80,16 @@
                                        onclick="return confirm('Bạn có chắc chắn muốn sửa danh mục này?');">
                                         <i class="bi bi-pencil-square me-1"></i>Sửa
                                     </a>
-                                    <a asp-action="Delete" asp-route-id="@item.Id"
-                                       class="btn btn-danger btn-sm"
-                                       onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục này?');">
-                                        <i class="bi bi-trash me-1"></i>Xóa
+                                    <a asp-action="Display" asp-route-id="@item.Id"
+                                       class="btn btn-info btn-sm">
+                                        <i class="bi bi-eye me-1"></i>Xem
                                     </a>
+                                    <button type="button"
+                                            class="btn btn-danger btn-sm btn-delete-category"
+                                            data-id="@item.Id"
+                                            data-name="@item.Name">
+                                        <i class="bi bi-trash me-1"></i>Xóa
+                                    </button>
                                 </div>
                             }
                         </td>
@@ -94,7 +99,9 @@
         </table>
     </div>
 </div>
-
+<form id="deleteCategoryForm" method="post" asp-action="DeleteConfirmed" style="display:none;">
+    <input type="hidden" name="id" id="deleteCategoryId" />
+</form>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
@@ -146,6 +153,17 @@
                 if (!nameCell) return;
                 const name = nameCell.textContent.trim().toLowerCase();
                 row.style.display = name.includes(search) ? '' : 'none';
+            });
+        });
+
+        document.querySelectorAll('.btn-delete-category').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const id = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                if (confirm(`Bạn có chắc chắn muốn xóa danh mục "${name}" không?`)) {
+                    document.getElementById('deleteCategoryId').value = id;
+                    document.getElementById('deleteCategoryForm').submit();
+                }
             });
         });
     </script>

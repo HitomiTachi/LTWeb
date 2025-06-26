@@ -1,7 +1,9 @@
+using NguyenNhan_2179_tuan3.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Repositories;
+using System;
 
 // Đảm bảo bạn đã có using cho ServicesEmailSender
 // using NguyenNhan_2179_tuan3.Services; // Nếu bạn để class trong folder Services
@@ -10,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 
 // Đăng ký đúng class gửi mail -- chỉ đăng ký 1 lần!
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
@@ -47,7 +51,8 @@ builder.Services.AddSession(options =>
 // 1.8 Inject các Repository
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
-
+// Connect VNPay API
+builder.Services.AddScoped<IVnPayService, VnPayService>();
 // =======================
 // 2. Cấu hình Middleware
 // =======================

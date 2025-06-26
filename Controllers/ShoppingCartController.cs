@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using NguyenNhan_2179_tuan3.Extensions;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Repositories;
+using NguyenNhan_2179_tuan3.Services;
 using System.Security.Claims;
 
 namespace NguyenNhan_2179_tuan3.Controllers
@@ -12,14 +13,17 @@ namespace NguyenNhan_2179_tuan3.Controllers
         private readonly IProductRepository _productRepository;
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IVnPayService _vnPayService;
 
         public ShoppingCartController(ApplicationDbContext context,
             UserManager<ApplicationUser> userManager,
-            IProductRepository productRepository)
+            IProductRepository productRepository,
+            IVnPayService vnPayService)
         {
             _productRepository = productRepository;
             _context = context;
             _userManager = userManager;
+            _vnPayService = vnPayService;
         }
 
         // Helper để lấy session key
@@ -123,13 +127,21 @@ namespace NguyenNhan_2179_tuan3.Controllers
 
         // ✅ Xử lý thanh toán
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Checkout(Order order)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey());
 
             if (cart == null || !cart.Items.Any())
             {
+                TempData["Error"] = "Giỏ hàng trống!";
                 return RedirectToAction("Index");
+            }
+
+            // Kiểm tra hợp lệ model
+            if (!ModelState.IsValid)
+            {
+                return View(order); // Trả lại view với lỗi, không chuyển trang
             }
 
             // Kiểm tra tồn kho trước khi đặt
@@ -177,11 +189,60 @@ namespace NguyenNhan_2179_tuan3.Controllers
                 Price = i.Price
             }).ToList();
 
+            // Nếu chọn VNPay thì chuyển hướng sang PaymentController
+            if (order.PaymentMethod == "VnPay")
+            {
+                var paymentInfo = new PaymentInformationModel
+                {
+                    Amount = (int)order.TotalPrice,
+                    OrderDescription = $"Thanh toán đơn hàng #{order.Id}",
+                    OrderType = "billpayment",
+                    Name = user.UserName
+                };
+                // Lưu tạm order vào session hoặc database nếu cần
+                TempData["Order"] = Newtonsoft.Json.JsonConvert.SerializeObject(order);
+                return RedirectToAction("CreatePaymentUrlVnpay", "Payment", paymentInfo);
+            }
+
+            // Nếu là tiền mặt, lưu đơn hàng như cũ
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             HttpContext.Session.Remove(GetCartKey());
 
             return View("OrderCompleted", order.Id);
+        }
+
+        // Nhận AJAX từ form khi chọn VNPay
+        [HttpPost]
+        public async Task<IActionResult> GetVnPayUrl([FromBody] Order order)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>(GetCartKey());
+            var user = await _userManager.GetUserAsync(User);
+
+            order.UserId = user.Id;
+            order.OrderDate = DateTime.UtcNow;
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            order.Status = "Chờ xác nhận";
+            order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            {
+                ProductId = i.ProductId,
+                Quantity = i.Quantity,
+                Price = i.Price
+            }).ToList();
+
+            TempData["Order"] = Newtonsoft.Json.JsonConvert.SerializeObject(order);
+
+            var paymentInfo = new PaymentInformationModel
+            {
+                Amount = (int)order.TotalPrice,
+                OrderDescription = $"Thanh toán đơn hàng",
+                OrderType = "billpayment",
+                Name = user.UserName
+            };
+
+            // Gọi service tạo URL VNPay
+            var url = _vnPayService.CreatePaymentUrl(paymentInfo, HttpContext);
+            return Json(new { url });
         }
 
         // ✅ Đếm số lượng sản phẩm trong giỏ

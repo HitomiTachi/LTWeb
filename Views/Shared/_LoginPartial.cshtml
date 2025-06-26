@@ -7,10 +7,12 @@
     {
         var user = await UserManager.GetUserAsync(User);
         var roles = user != null ? await UserManager.GetRolesAsync(user) : new List<string>();
+        var fullName = user?.FullName ?? User.Identity?.Name;
         var role = roles.FirstOrDefault();
         <li class="nav-item">
             <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
-                Xin chào @UserManager.GetUserName(User)! @(role != null ? $"({role})" : "")
+                @* Xin chào @UserManager.GetUserName(User)! @(role != null ? $"({role})" : "") *@
+                Xin chào @fullName! @(role != null ? $"({role})" : "")
             </a>
         </li>
     }

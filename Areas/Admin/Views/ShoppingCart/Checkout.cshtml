@@ -1,28 +1,103 @@
 ﻿@model NguyenNhan_2179_tuan3.Models.Order
 
 @{
-    ViewData["Title"] = "Checkout";
+    ViewData["Title"] = "Thanh toán đơn hàng";
 }
 
 <h2>@ViewData["Title"]</h2>
 
-<form asp-action="Checkout" method="post">
-    @Html.AntiForgeryToken()
-    <div class="form-group mb-3">
-        <label asp-for="ShippingAddress" class="form-label">Shipping Address</label>
-        <input asp-for="ShippingAddress" class="form-control" />
-        <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+<form asp-action="Checkout" method="post" id="checkoutForm">
+    <div id="step1">
+        <div class="form-group mb-3">
+            <label asp-for="ShippingAddress" class="form-label">Địa chỉ giao hàng</label>
+            <input asp-for="ShippingAddress" class="form-control" />
+            <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Notes" class="form-label">Ghi chú</label>
+            <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>
+        <button type="button" class="btn btn-primary" id="btnNext">Tiếp tục chọn phương thức thanh toán</button>
     </div>
-    <div class="form-group mb-3">
-        <label asp-for="Notes" class="form-label">Notes</label>
-        <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
-        <span asp-validation-for="Notes" class="text-danger"></span>
+
+    <div id="step2" style="display:none;">
+        <div class="form-group mb-3">
+            <label class="form-label">Phương thức thanh toán</label>
+            <div>
+                <input type="radio" id="cash" name="PaymentMethod" value="Cash" />
+                <label for="cash">Tiền mặt</label>
+            </div>
+            <div>
+                <input type="radio" id="vnpay" name="PaymentMethod" value="VnPay" />
+                <label for="vnpay">Chuyển khoản (VNPay QR)</label>
+            </div>
+            <div>
+                <input type="radio" id="momo" name="PaymentMethod" value="MoMo" />
+                <label for="momo">MoMo</label>
+            </div>
+            <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success" id="btnPay">Thanh toán</button>
+        <button type="button" class="btn btn-secondary ms-2" id="btnBack">Quay lại</button>
     </div>
-    <button type="submit" class="btn btn-primary">Place Order</button>
 </form>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script>
+        // Bước 1: Nhập thông tin, nhấn tiếp tục để sang bước 2
+        document.getElementById('btnNext').addEventListener('click', function () {
+            var shippingAddress = document.getElementById('ShippingAddress');
+            var valid = true;
+            if (!shippingAddress.value.trim()) {
+                valid = false;
+                shippingAddress.classList.add('is-invalid');
+            } else {
+                shippingAddress.classList.remove('is-invalid');
+            }
+            if (valid) {
+                document.getElementById('step1').style.display = 'none';
+                document.getElementById('step2').style.display = '';
+            }
+        });
+
+        // Quay lại bước 1
+        document.getElementById('btnBack').addEventListener('click', function () {
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById('step1').style.display = '';
+        });
+
+        // Khi nhấn nút Thanh toán
+        document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+            var paymentMethod = document.querySelector('input[name="PaymentMethod"]:checked');
+            if (!paymentMethod) {
+                e.preventDefault();
+                alert("Vui lòng chọn phương thức thanh toán!");
+                return false;
+            }
+            // Xử lý riêng cho từng phương thức nếu muốn
+            if (paymentMethod.value === 'VnPay') {
+                e.preventDefault();
+                fetch('@Url.Action("GetVnPayUrl", "ShoppingCart", new { area = "Admin" })', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        shippingAddress: document.getElementById('ShippingAddress').value,
+                        notes: document.getElementById('Notes').value,
+                        paymentMethod: paymentMethod.value
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.url) {
+                        window.location.href = data.url;
+                    }
+                });
+            }
+            // Nếu muốn tích hợp MoMo, xử lý tương tự ở đây
+            // else if (paymentMethod.value === 'MoMo') { ... }
+            // Nếu là tiền mặt thì form sẽ submit bình thường
+        });
+    </script>
 }

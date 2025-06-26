@@ -9,11 +9,7 @@
             <i class="bi bi-person-circle me-2"></i>Hồ sơ
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" asp-page="./Email">
-            <i class="bi bi-envelope-fill me-2"></i>Email
-        </a>
-    </li>
+    @* <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li> *@
     <li class="nav-item">
         <a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" asp-page="./ChangePassword">
             <i class="bi bi-key-fill me-2"></i>Mật khẩu
@@ -27,17 +23,6 @@
             </a>
         </li>
     }
-    @* <li class="nav-item">
-        <a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" asp-page="./TwoFactorAuthentication">
-            <i class="bi bi-shield-lock-fill me-2"></i>Xác thực 2 yếu tố
-        </a>
-    </li> *@
-    @* <li class="nav-item">
-        <a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" asp-page="./PersonalData">
-            <i class="bi bi-file-earmark-text-fill me-2"></i>Dữ liệu cá nhân
-        </a>
-    </li> *@
-    <!-- Nút đăng xuất -->
     <li class="nav-item mt-3">
         <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="w-100">
             <button type="submit" class="nav-link btn btn-link text-danger w-100 text-start" style="border: none;">
@@ -45,4 +30,5 @@
             </button>
         </form>
     </li>
+
 </ul>

@@ -7,6 +7,7 @@ using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
 using NguyenNhan_2179_tuan3.Models;
+using Microsoft.AspNetCore.Http;
 
 public class VnPayLibrary
 {
@@ -25,8 +26,15 @@ public class VnPayLibrary
             }
         }
 
-        var orderId = Convert.ToInt64(vnPay.GetResponseData("vnp_TxnRef"));
-        var vnPayTranId = Convert.ToInt64(vnPay.GetResponseData("vnp_TransactionNo"));
+        // Sử dụng TryParse để tránh lỗi khi giá trị rỗng hoặc không hợp lệ
+        string orderIdStr = vnPay.GetResponseData("vnp_TxnRef");
+        long orderId = 0;
+        long.TryParse(orderIdStr, out orderId);
+
+        string vnPayTranIdStr = vnPay.GetResponseData("vnp_TransactionNo");
+        long vnPayTranId = 0;
+        long.TryParse(vnPayTranIdStr, out vnPayTranId);
+
         var vnpResponseCode = vnPay.GetResponseData("vnp_ResponseCode");
         var vnpSecureHash =
             collection.FirstOrDefault(k => k.Key == "vnp_SecureHash").Value; //hash của dữ liệu trả về
@@ -59,7 +67,7 @@ public class VnPayLibrary
         try
         {
             var remoteIpAddress = context.Connection.RemoteIpAddress;
-        
+
             if (remoteIpAddress != null)
             {
                 if (remoteIpAddress.AddressFamily == AddressFamily.InterNetworkV6)
@@ -67,9 +75,9 @@ public class VnPayLibrary
                     remoteIpAddress = Dns.GetHostEntry(remoteIpAddress).AddressList
                         .FirstOrDefault(x => x.AddressFamily == AddressFamily.InterNetwork);
                 }
-        
+
                 if (remoteIpAddress != null) ipAddress = remoteIpAddress.ToString();
-        
+
                 return ipAddress;
             }
         }

@@ -8571,23 +8571,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thanh\\.nuget\\packages\\": {},
+    "C:\\Users\\Nhan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\LTWeb\\NguyenNhan_2179_tuan3.csproj",
+      "projectUniqueName": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj",
       "projectName": "NguyenNhan_2179_tuan3",
-      "projectPath": "E:\\LTWeb\\NguyenNhan_2179_tuan3.csproj",
-      "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "E:\\LTWeb\\obj\\",
+      "projectPath": "C:\\GitHub\\LTWeb\\NguyenNhan_2179_tuan3.csproj",
+      "packagesPath": "C:\\Users\\Nhan\\.nuget\\packages\\",
+      "outputPath": "C:\\GitHub\\LTWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

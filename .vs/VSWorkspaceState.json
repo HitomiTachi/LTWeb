@@ -3,14 +3,15 @@
     "",
     "\\Areas",
     "\\Areas\\Admin",
-    "\\Areas\\Admin\\Controllers",
     "\\Areas\\Admin\\Views",
     "\\Areas\\Admin\\Views\\ShoppingCart",
+    "\\Controllers",
     "\\Models",
+    "\\Services",
     "\\Views",
     "\\Views\\Home",
     "\\Views\\ShoppingCart"
   ],
-  "SelectedNode": "\\NguyenNhan_2179_tuan3.sln",
+  "SelectedNode": "\\Controllers\\PaymentController.cs",
   "PreviewInSolutionExplorer": false
 }

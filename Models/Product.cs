@@ -19,5 +19,6 @@ namespace NguyenNhan_2179_tuan3.Models
 
         [Range(0, int.MaxValue, ErrorMessage = "Số lượng tồn phải >= 0")]
         public int StockQuantity { get; set; }
+
     }
 }

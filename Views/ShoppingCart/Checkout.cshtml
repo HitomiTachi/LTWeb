@@ -36,12 +36,12 @@
             </div>
             <div>
                 <input type="radio" id="vnpay" name="PaymentMethod" value="VnPay" />
-                <label for="vnpay">Chuyển khoản (VNPay QR)</label>
+                <label for="vnpay">Chuyển khoản (VNPay)</label>
             </div>
-            <div>
+            @* <div>
                 <input type="radio" id="momo" name="PaymentMethod" value="MoMo" />
                 <label for="momo">MoMo</label>
-            </div>
+            </div> *@
             <span asp-validation-for="PaymentMethod" class="text-danger"></span>
         </div>
         <button type="submit" class="btn btn-success" id="btnPay">Thanh toán</button>

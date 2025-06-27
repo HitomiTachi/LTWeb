@@ -28,9 +28,14 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 // 1.3 Cấu hình cookie đăng nhập
 builder.Services.ConfigureApplicationCookie(options =>
 {
+    // Đường dẫn các trang mặc định
     options.LoginPath = "/Identity/Account/Login";
     options.LogoutPath = "/Identity/Account/Logout";
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+
+    // Thiết lập ghi nhớ đăng nhập
+    options.ExpireTimeSpan = TimeSpan.FromDays(14); // Ghi nhớ trong 14 ngày
+    options.SlidingExpiration = true; // Gia hạn cookie nếu người dùng tiếp tục hoạt động
 });
 
 // 1.5 Razor Pages và MVC

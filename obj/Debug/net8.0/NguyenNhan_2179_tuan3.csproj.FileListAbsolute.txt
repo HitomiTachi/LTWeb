@@ -289,10 +289,10 @@ E:\LTW-new\LTWeb\obj\Debug\net8.0\staticwebassets.build.json
 E:\LTW-new\LTWeb\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\LTW-new\LTWeb\obj\Debug\net8.0\staticwebassets.development.json
 E:\LTW-new\LTWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\LTW-new\LTWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\LTW-new\LTWeb\obj\Debug\net8.0\NguyenNh.1BB2B816.Up2Date
 E:\LTW-new\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.dll
 E:\LTW-new\LTWeb\obj\Debug\net8.0\refint\NguyenNhan_2179_tuan3.dll
 E:\LTW-new\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.pdb
 E:\LTW-new\LTWeb\obj\Debug\net8.0\NguyenNhan_2179_tuan3.genruntimeconfig.cache
 E:\LTW-new\LTWeb\obj\Debug\net8.0\ref\NguyenNhan_2179_tuan3.dll
+E:\LTW-new\LTWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

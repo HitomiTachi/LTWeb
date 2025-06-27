@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using NguyenNhan_2179_tuan3.Models;
 using NguyenNhan_2179_tuan3.Repositories;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
 
 namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
 {
@@ -31,98 +32,58 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
             _context = context;
         }
 
-        // Hiển thị danh sách sản phẩm
         public async Task<IActionResult> IndexList()
         {
             var products = await _productRepository.GetAllAsync();
             return View(products);
         }
 
-        // Hiển thị chi tiết sản phẩm
         public async Task<IActionResult> Details(int id)
         {
             var product = await _context.Products
                 .Include(p => p.Images)
                 .Include(p => p.Category)
                 .FirstOrDefaultAsync(p => p.Id == id);
-            if (product == null)
-                return NotFound();
+            if (product == null) return NotFound();
             return View(product);
         }
 
-        // Hiển thị form thêm sản phẩm
         public async Task<IActionResult> Add()
         {
             ViewBag.Categories = await GetCategoriesSelectList();
             return View();
         }
 
-        // Xử lý thêm sản phẩm (nâng cấp: thêm nhiều ảnh phụ)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Add(Product product, IFormFile imageFile, List<IFormFile> Images)
         {
             if (ModelState.IsValid)
             {
-                // 1. Xử lý ảnh đại diện (nếu có)
-                if (imageFile != null && imageFile.Length > 0)
+                var imgUrl = await SaveImageAsync(imageFile);
+                if (imageFile != null && imgUrl == null)
                 {
-                    var ext = Path.GetExtension(imageFile.FileName).ToLower();
-                    var allowedExt = new[] { ".jpg", ".jpeg", ".png", ".gif" };
-                    if (!allowedExt.Contains(ext))
-                    {
-                        ModelState.AddModelError("ImageUrl", "Chỉ cho phép định dạng ảnh JPG, PNG, GIF.");
-                        ViewBag.Categories = await GetCategoriesSelectList();
-                        return View(product);
-                    }
-
-                    var fileName = $"{Guid.NewGuid()}{ext}";
-                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
-                    if (!Directory.Exists(folderPath))
-                    {
-                        Directory.CreateDirectory(folderPath);
-                    }
-                    var filePath = Path.Combine(folderPath, fileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await imageFile.CopyToAsync(stream);
-                    }
-                    product.ImageUrl = $"/images/{fileName}";
+                    ModelState.AddModelError("ImageUrl", "Chỉ cho phép định dạng ảnh JPG, PNG, GIF.");
+                    ViewBag.Categories = await GetCategoriesSelectList();
+                    return View(product);
                 }
 
-                // 2. Lưu sản phẩm trước để có ProductId
+                product.ImageUrl = imgUrl;
+
                 await _productRepository.AddAsync(product);
 
-                // 3. Xử lý lưu nhiều ảnh phụ (Images)
                 if (Images != null && Images.Count > 0)
                 {
-                    var allowedExt = new[] { ".jpg", ".jpeg", ".png", ".gif" };
                     foreach (var file in Images)
                     {
-                        if (file != null && file.Length > 0)
+                        var subUrl = await SaveImageAsync(file);
+                        if (subUrl != null)
                         {
-                            var ext = Path.GetExtension(file.FileName).ToLower();
-                            if (!allowedExt.Contains(ext))
-                                continue; // bỏ qua file không hợp lệ
-
-                            var fileName = $"{Guid.NewGuid()}{ext}";
-                            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
-                            if (!Directory.Exists(folderPath))
-                                Directory.CreateDirectory(folderPath);
-
-                            var filePath = Path.Combine(folderPath, fileName);
-                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            _context.ProductImages.Add(new ProductImage
                             {
-                                await file.CopyToAsync(stream);
-                            }
-
-                            // Lưu vào bảng ProductImages
-                            var productImg = new ProductImage
-                            {
-                                Url = $"/images/{fileName}",
+                                Url = subUrl,
                                 ProductId = product.Id
-                            };
-                            _context.ProductImages.Add(productImg);
+                            });
                         }
                     }
                     await _context.SaveChangesAsync();
@@ -135,6 +96,7 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
             return View(product);
         }
 
+        // GET: Admin/Product/Update/5
         // Hiển thị form cập nhật sản phẩm (INCLUDE Images)
         public async Task<IActionResult> Update(int id)
         {
@@ -274,19 +236,16 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
             return Json(new { success = false });
         }
 
-        // Hiển thị form xóa sản phẩm
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _context.Products
                 .Include(p => p.Images)
                 .FirstOrDefaultAsync(p => p.Id == id);
-            if (product == null)
-                return NotFound();
+            if (product == null) return NotFound();
 
             return View(product);
         }
 
-        // Xử lý xóa sản phẩm
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -296,23 +255,20 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
                 .FirstOrDefaultAsync(p => p.Id == id);
             if (product != null)
             {
-                // Xóa file ảnh đại diện nếu có
                 if (!string.IsNullOrEmpty(product.ImageUrl))
                 {
-                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", product.ImageUrl.TrimStart('/').Replace("/", Path.DirectorySeparatorChar.ToString()));
+                    var imagePath = Path.Combine("wwwroot", product.ImageUrl.TrimStart('/').Replace("/", Path.DirectorySeparatorChar.ToString()));
                     if (System.IO.File.Exists(imagePath))
-                    {
                         System.IO.File.Delete(imagePath);
-                    }
                 }
 
-                // Xóa file các ảnh phụ nếu có
                 foreach (var img in product.Images)
                 {
-                    var imgPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", img.Url.TrimStart('/').Replace("/", Path.DirectorySeparatorChar.ToString()));
+                    var imgPath = Path.Combine("wwwroot", img.Url.TrimStart('/').Replace("/", Path.DirectorySeparatorChar.ToString()));
                     if (System.IO.File.Exists(imgPath))
                         System.IO.File.Delete(imgPath);
                 }
+
                 _context.ProductImages.RemoveRange(product.Images);
                 await _context.SaveChangesAsync();
 
@@ -321,7 +277,29 @@ namespace NguyenNhan_2179_tuan3.Areas.Admin.Controllers
             return RedirectToAction(nameof(IndexList));
         }
 
-        // Helper method: Lấy danh sách danh mục dưới dạng SelectList
+        private async Task<string?> SaveImageAsync(IFormFile file)
+        {
+            if (file == null || file.Length == 0) return null;
+
+            var ext = Path.GetExtension(file.FileName).ToLower();
+            var allowedExt = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            if (!allowedExt.Contains(ext)) return null;
+
+            var fileName = $"{Guid.NewGuid()}{ext}";
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            var filePath = Path.Combine(folderPath, fileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return $"/images/{fileName}";
+        }
+
         private async Task<IEnumerable<SelectListItem>> GetCategoriesSelectList()
         {
             var categories = await _categoryRepository.GetAllAsync();

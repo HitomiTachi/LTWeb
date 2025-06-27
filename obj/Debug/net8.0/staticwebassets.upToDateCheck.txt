@@ -16,7 +16,7 @@ wwwroot\images\35075888-28cf-477b-b5b9-b9a4b5f5ab5d.jpg
 wwwroot\images\35951381-90ed-49da-908a-56b474b371af.jpg
 wwwroot\images\35bd7129-f271-4fa9-bd33-26782f70162d.jpg
 wwwroot\images\4.jpg
-wwwroot\images\4356e2f6-d0b4-4e8c-b5ca-3888c261ab81.jpg
+wwwroot\images\e9a24b56-f063-4c7e-be96-fbe9c9ff56f4.jpg
 wwwroot\images\5.jpg
 wwwroot\images\552fd7f3-e19e-4fc4-866b-dd8d00ce2ae1.jpg
 wwwroot\images\55440816-5b1a-48db-8eb6-d617a9322b20.jpg
@@ -116,3 +116,6 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\images\artworks-ooGEYCL4wuDB5Bje-71E8NA-t500x500.jpg
+wwwroot\images\5a89d9fa-a390-4582-8f88-5a63f1a748c0.jpg
+wwwroot\images\f69cc595-d88f-4376-8e59-c516917213bd.jpg

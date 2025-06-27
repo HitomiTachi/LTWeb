@@ -245,7 +245,7 @@ namespace NguyenNhan_2179_tuan3.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("NguyenNhan_2179_tuan3.Models.Order", b =>
@@ -282,7 +282,7 @@ namespace NguyenNhan_2179_tuan3.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("NguyenNhan_2179_tuan3.Models.OrderDetail", b =>
@@ -311,7 +311,7 @@ namespace NguyenNhan_2179_tuan3.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("OrderDetails", (string)null);
                 });
 
             modelBuilder.Entity("NguyenNhan_2179_tuan3.Models.Product", b =>
@@ -347,7 +347,7 @@ namespace NguyenNhan_2179_tuan3.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("NguyenNhan_2179_tuan3.Models.ProductImage", b =>
@@ -369,7 +369,7 @@ namespace NguyenNhan_2179_tuan3.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
